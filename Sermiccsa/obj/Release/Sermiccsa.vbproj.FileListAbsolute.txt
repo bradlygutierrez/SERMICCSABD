@@ -1,0 +1,9 @@
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.Cambiar_presupuesto.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.FormAjustes.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.FormEtapas.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.FormReportes.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.Resources.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Release\Sermiccsa.vbproj.CoreCompileInputs.cache

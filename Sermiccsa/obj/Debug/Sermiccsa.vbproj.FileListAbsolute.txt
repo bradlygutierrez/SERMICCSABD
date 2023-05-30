@@ -1,0 +1,205 @@
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.Cambiar_presupuesto.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.FormEtapas.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\bin\Debug\Sermiccsa.exe
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\bin\Debug\Sermiccsa.pdb
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\bin\Debug\Sermiccsa.xml
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.exe
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.xml
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+C:\Users\bradl\source\repos\Sermiccsa\Sermiccsa\obj\Debug\Sermiccsa.GastosPorEtapa.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.pdb
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.xml
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Cambiar_presupuesto.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEtapas.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.GastosPorEtapa.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.exe
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.xml
+C:\Users\hebod\OneDrive\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.pdb
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.xml
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEtapas.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.exe
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.xml
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+D:\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe
+D:\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.pdb
+D:\Escritorio\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.xml
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Form1.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEtapas.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.exe
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.xml
+D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPadre.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.pdb
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.xml
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEtapas.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPadre.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.exe
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.xml
+C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.pdb
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.pdb
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.xml
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormPadre.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.exe
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.xml
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.pdb
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
+D:\Escritorio\Andre Universidad (NO BORRAR)\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.pdb
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.xml
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormPadre.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.exe
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.xml
+C:\Users\Isi33\Desktop\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.exe
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.xml
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.pdb
+C:\Users\Isi33\Desktop\Diseño de base de datos\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.xml
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.exe
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.pdb
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\bin\Debug\Sermiccsa.xml
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.exe
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.xml
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.pdb
