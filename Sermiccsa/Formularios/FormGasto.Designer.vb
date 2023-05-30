@@ -34,13 +34,16 @@ Partial Class FormGasto
         Me.cbRubro = New System.Windows.Forms.ComboBox()
         Me.GastoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
+        Me.RubroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label13 = New System.Windows.Forms.Label()
         Me.tbIR = New System.Windows.Forms.TextBox()
+        Me.GastoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.FacturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.lblIR = New System.Windows.Forms.Label()
         Me.tbTotal = New System.Windows.Forms.TextBox()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.tbIVA = New System.Windows.Forms.TextBox()
+        Me.FacturaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.lblIVA = New System.Windows.Forms.Label()
         Me.tbSubtotal = New System.Windows.Forms.TextBox()
         Me.lblSubtotal = New System.Windows.Forms.Label()
@@ -50,6 +53,7 @@ Partial Class FormGasto
         Me.tbReferencia = New System.Windows.Forms.TextBox()
         Me.lblReferencia = New System.Windows.Forms.Label()
         Me.cbEtapa = New System.Windows.Forms.ComboBox()
+        Me.EtapaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.lblFecha = New System.Windows.Forms.Label()
         Me.lblEtapa = New System.Windows.Forms.Label()
         Me.lblNombreGasto = New System.Windows.Forms.Label()
@@ -61,24 +65,20 @@ Partial Class FormGasto
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BeneficiarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BeneficiarioTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.beneficiarioTableAdapter()
-        Me.RubroBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.RubroTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.rubroTableAdapter()
-        Me.GastoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.FacturaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.FacturaBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EtapaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EtapaTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.etapaTableAdapter()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FacturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BeneficiarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RubroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GastoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FacturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FacturaBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FacturaBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EtapaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BeneficiarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FacturaBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label12
@@ -99,7 +99,7 @@ Partial Class FormGasto
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button6.Location = New System.Drawing.Point(968, 570)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(111, 38)
         Me.Button6.TabIndex = 72
@@ -112,7 +112,7 @@ Partial Class FormGasto
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button7.Location = New System.Drawing.Point(717, 570)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(111, 38)
         Me.Button7.TabIndex = 71
@@ -125,7 +125,7 @@ Partial Class FormGasto
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button5.Location = New System.Drawing.Point(1025, 508)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(111, 38)
         Me.Button5.TabIndex = 70
@@ -138,7 +138,7 @@ Partial Class FormGasto
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Location = New System.Drawing.Point(907, 508)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(111, 38)
         Me.Button2.TabIndex = 69
@@ -151,7 +151,7 @@ Partial Class FormGasto
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button3.Location = New System.Drawing.Point(661, 508)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(111, 38)
         Me.Button3.TabIndex = 68
@@ -164,7 +164,7 @@ Partial Class FormGasto
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button4.Location = New System.Drawing.Point(783, 508)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(111, 38)
         Me.Button4.TabIndex = 67
@@ -178,7 +178,7 @@ Partial Class FormGasto
         Me.cbRubro.DisplayMember = "nombre"
         Me.cbRubro.FormattingEnabled = True
         Me.cbRubro.Location = New System.Drawing.Point(803, 420)
-        Me.cbRubro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbRubro.Margin = New System.Windows.Forms.Padding(4)
         Me.cbRubro.Name = "cbRubro"
         Me.cbRubro.Size = New System.Drawing.Size(328, 24)
         Me.cbRubro.TabIndex = 25
@@ -194,6 +194,11 @@ Partial Class FormGasto
         Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
         Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'RubroBindingSource
+        '
+        Me.RubroBindingSource.DataMember = "rubro"
+        Me.RubroBindingSource.DataSource = Me.SermiccsaDataSet
+        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -208,13 +213,18 @@ Partial Class FormGasto
         '
         'tbIR
         '
-        Me.tbIR.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GastoBindingSource1, "id_factura", True))
+        Me.tbIR.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GastoBindingSource, "id_factura", True))
         Me.tbIR.Location = New System.Drawing.Point(803, 316)
-        Me.tbIR.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbIR.Margin = New System.Windows.Forms.Padding(4)
         Me.tbIR.Multiline = True
         Me.tbIR.Name = "tbIR"
         Me.tbIR.Size = New System.Drawing.Size(328, 24)
         Me.tbIR.TabIndex = 21
+        '
+        'GastoBindingSource1
+        '
+        Me.GastoBindingSource1.DataMember = "gasto"
+        Me.GastoBindingSource1.DataSource = Me.SermiccsaDataSet
         '
         'FacturaBindingSource
         '
@@ -236,7 +246,7 @@ Partial Class FormGasto
         'tbTotal
         '
         Me.tbTotal.Location = New System.Drawing.Point(803, 267)
-        Me.tbTotal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbTotal.Margin = New System.Windows.Forms.Padding(4)
         Me.tbTotal.Multiline = True
         Me.tbTotal.Name = "tbTotal"
         Me.tbTotal.Size = New System.Drawing.Size(328, 24)
@@ -256,13 +266,18 @@ Partial Class FormGasto
         '
         'tbIVA
         '
-        Me.tbIVA.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FacturaBindingSource1, "iva", True))
+        Me.tbIVA.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FacturaBindingSource, "iva", True))
         Me.tbIVA.Location = New System.Drawing.Point(803, 212)
-        Me.tbIVA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbIVA.Margin = New System.Windows.Forms.Padding(4)
         Me.tbIVA.Multiline = True
         Me.tbIVA.Name = "tbIVA"
         Me.tbIVA.Size = New System.Drawing.Size(328, 24)
         Me.tbIVA.TabIndex = 17
+        '
+        'FacturaBindingSource1
+        '
+        Me.FacturaBindingSource1.DataMember = "factura"
+        Me.FacturaBindingSource1.DataSource = Me.SermiccsaDataSet
         '
         'lblIVA
         '
@@ -280,7 +295,7 @@ Partial Class FormGasto
         '
         Me.tbSubtotal.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FacturaBindingSource1, "subtotal", True))
         Me.tbSubtotal.Location = New System.Drawing.Point(803, 155)
-        Me.tbSubtotal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbSubtotal.Margin = New System.Windows.Forms.Padding(4)
         Me.tbSubtotal.Multiline = True
         Me.tbSubtotal.Name = "tbSubtotal"
         Me.tbSubtotal.Size = New System.Drawing.Size(329, 24)
@@ -314,7 +329,7 @@ Partial Class FormGasto
         '
         Me.tbDescripcion.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GastoBindingSource, "descripcion", True))
         Me.tbDescripcion.Location = New System.Drawing.Point(296, 315)
-        Me.tbDescripcion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbDescripcion.Margin = New System.Windows.Forms.Padding(4)
         Me.tbDescripcion.Multiline = True
         Me.tbDescripcion.Name = "tbDescripcion"
         Me.tbDescripcion.Size = New System.Drawing.Size(329, 77)
@@ -336,7 +351,7 @@ Partial Class FormGasto
         '
         Me.tbReferencia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GastoBindingSource, "id_factura", True))
         Me.tbReferencia.Location = New System.Drawing.Point(296, 265)
-        Me.tbReferencia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbReferencia.Margin = New System.Windows.Forms.Padding(4)
         Me.tbReferencia.Multiline = True
         Me.tbReferencia.Name = "tbReferencia"
         Me.tbReferencia.Size = New System.Drawing.Size(329, 24)
@@ -362,11 +377,16 @@ Partial Class FormGasto
         Me.cbEtapa.DisplayMember = "nombre"
         Me.cbEtapa.FormattingEnabled = True
         Me.cbEtapa.Location = New System.Drawing.Point(296, 209)
-        Me.cbEtapa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbEtapa.Margin = New System.Windows.Forms.Padding(4)
         Me.cbEtapa.Name = "cbEtapa"
         Me.cbEtapa.Size = New System.Drawing.Size(329, 24)
         Me.cbEtapa.TabIndex = 7
         Me.cbEtapa.ValueMember = "id_proyecto"
+        '
+        'EtapaBindingSource
+        '
+        Me.EtapaBindingSource.DataMember = "etapa"
+        Me.EtapaBindingSource.DataSource = Me.SermiccsaDataSet
         '
         'lblFecha
         '
@@ -470,19 +490,9 @@ Partial Class FormGasto
         '
         Me.BeneficiarioTableAdapter.ClearBeforeFill = True
         '
-        'RubroBindingSource
-        '
-        Me.RubroBindingSource.DataMember = "rubro"
-        Me.RubroBindingSource.DataSource = Me.SermiccsaDataSet
-        '
         'RubroTableAdapter
         '
         Me.RubroTableAdapter.ClearBeforeFill = True
-        '
-        'GastoBindingSource1
-        '
-        Me.GastoBindingSource1.DataMember = "gasto"
-        Me.GastoBindingSource1.DataSource = Me.SermiccsaDataSet
         '
         'ComboBox2
         '
@@ -496,20 +506,10 @@ Partial Class FormGasto
         Me.ComboBox2.TabIndex = 78
         Me.ComboBox2.ValueMember = "nombre"
         '
-        'FacturaBindingSource1
-        '
-        Me.FacturaBindingSource1.DataMember = "factura"
-        Me.FacturaBindingSource1.DataSource = Me.SermiccsaDataSet
-        '
         'FacturaBindingSource2
         '
         Me.FacturaBindingSource2.DataMember = "factura"
         Me.FacturaBindingSource2.DataSource = Me.SermiccsaDataSet
-        '
-        'EtapaBindingSource
-        '
-        Me.EtapaBindingSource.DataMember = "etapa"
-        Me.EtapaBindingSource.DataSource = Me.SermiccsaDataSet
         '
         'EtapaTableAdapter
         '
@@ -561,20 +561,20 @@ Partial Class FormGasto
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.lblIR)
         Me.Controls.Add(Me.tbDescripcion)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximumSize = New System.Drawing.Size(1359, 728)
         Me.MinimumSize = New System.Drawing.Size(1359, 728)
         Me.Name = "FormGasto"
         Me.Text = "FormGasto"
         CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FacturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BeneficiarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RubroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GastoBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FacturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FacturaBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FacturaBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EtapaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BeneficiarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FacturaBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
