@@ -126,10 +126,14 @@ Public Class FormPrincipal
     End Sub
 
     Private Sub DataGridView1_CellContentClick_3(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        If e.RowIndex >= 0 AndAlso e.ColumnIndex Then
+            Dim idProyecto As Integer = e.RowIndex + 1
+            MessageBox.Show("Botón presionado en la con el id de proyecto: " & idProyecto.ToString())
 
+        End If
     End Sub
 
-    Private Sub FillBy2ToolStripButton_Click(sender As Object, e As EventArgs) Handles FillBy2ToolStripButton.Click
+    Private Sub FillBy2ToolStripButton_Click(sender As Object, e As EventArgs)
         Try
             Me.ProyectoTableAdapter.FillBy2(Me.SermiccsaDataSet.proyecto)
         Catch ex As System.Exception

@@ -67,5 +67,8 @@ Public Class FormNuevoProyecto
         Else
             MessageBox.Show(Me, "Errores de validacion.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
+        FormPrincipal.ProyectoTableAdapter.FillBy1(FormPrincipal.SermiccsaDataSet.proyecto)
+        FormPrincipal.Show()
+        Me.Hide()
     End Sub
 End Class
