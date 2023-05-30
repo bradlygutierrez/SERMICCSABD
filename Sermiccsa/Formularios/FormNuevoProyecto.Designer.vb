@@ -30,6 +30,8 @@ Partial Class FormNuevoProyecto
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
+        Me.ProyectoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -42,15 +44,13 @@ Partial Class FormNuevoProyecto
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.ProyectoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
         Me.ProyectoTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.proyectoTableAdapter()
         Me.ProyectoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProyectoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProyectoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -129,6 +129,16 @@ Partial Class FormNuevoProyecto
         Me.MonthCalendar1.Margin = New System.Windows.Forms.Padding(12, 11, 12, 11)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 6
+        '
+        'ProyectoBindingSource
+        '
+        Me.ProyectoBindingSource.DataMember = "proyecto"
+        Me.ProyectoBindingSource.DataSource = Me.SermiccsaDataSet
+        '
+        'SermiccsaDataSet
+        '
+        Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
+        Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label4
         '
@@ -264,16 +274,6 @@ Partial Class FormNuevoProyecto
         Me.Button3.Text = "Agregar "
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'ProyectoBindingSource
-        '
-        Me.ProyectoBindingSource.DataMember = "proyecto"
-        Me.ProyectoBindingSource.DataSource = Me.SermiccsaDataSet
-        '
-        'SermiccsaDataSet
-        '
-        Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
-        Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'ProyectoTableAdapter
         '
         Me.ProyectoTableAdapter.ClearBeforeFill = True
@@ -303,10 +303,10 @@ Partial Class FormNuevoProyecto
         Me.Text = "FormNuevoProyecto"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProyectoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProyectoBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
