@@ -1,4 +1,8 @@
-﻿Public Class FormAgregarCuenta
+﻿Imports System.Data.OleDb
+Imports System.Data.SqlClient
+
+Public Class FormAgregarCuenta
+
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
         Dim p As New Drawing2D.GraphicsPath()
         Dim borderRadius As Integer = 45
@@ -17,10 +21,47 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim miTabla As DataTable = SermiccsaDataSet.usuario
+        Dim cfilas As DataRowCollection = miTabla.Rows
+        Dim nuevaFila As DataRow
+        Try
 
+            nuevaFila = miTabla.NewRow()
+            nuevaFila(1) = tbUsuario.Text
+            nuevaFila(2) = tbCorreo.Text
+            nuevaFila(3) = tbContrasena.Text
+            nuevaFila(4) = 1
+            nuevaFila(5) = tbRespuesta.Text
+            cfilas.Add(nuevaFila)
+
+        Catch ex As System.Data.ConstraintException
+            MessageBox.Show(ex.Message)
+        End Try
+
+        Dim cmd As New SqlCommand()
+        If Me.Validate Then
+            Try
+                If (SermiccsaDataSet.HasChanges()) Then
+                    Me.UsuarioBindingSource.EndEdit()
+                    Me.UsuarioTableAdapter.Update(Me.SermiccsaDataSet.usuario)
+                    MessageBox.Show("Base de datos actualizada")
+                End If
+            Catch ex As Exception
+                MessageBox.Show("Error: " + ex.Message)
+            End Try
+
+        Else
+            MessageBox.Show(Me, "Errores de validacion.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+        FormIniciarSesion.Show()
+        Me.Hide()
     End Sub
 
     Private Sub FormAgregarCuenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'SermiccsaDataSet.pregunta' Puede moverla o quitarla según sea necesario.
+        Me.PreguntaTableAdapter.Fill(Me.SermiccsaDataSet.pregunta)
+        'TODO: esta línea de código carga datos en la tabla 'SermiccsaDataSet.usuario' Puede moverla o quitarla según sea necesario.
+        Me.UsuarioTableAdapter.Fill(Me.SermiccsaDataSet.usuario)
         Dim p As New Drawing2D.GraphicsPath()
         Dim borderRadius As Integer = 20
 
