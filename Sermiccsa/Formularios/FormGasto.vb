@@ -23,17 +23,22 @@
         'TODO: This line of code loads data into the 'SermiccsaDataSet.beneficiario' table. You can move, or remove it, as needed.
         Me.BeneficiarioTableAdapter.Fill(Me.SermiccsaDataSet.beneficiario)
         Me.GastoTableAdapter.Fill(Me.SermiccsaDataSet.gasto)
+        Me.FacturaTableAdapter.Fill(Me.SermiccsaDataSet.factura)
+        Me.mostarTotal()
 
         MostrarPosicion()
 
     End Sub
     Public Sub MostrarPosicion()
         Dim iTotal As Integer = GastoBindingSource.Count
+        Dim iTotalFactura As Integer = FacturaBindingSource1.Count
+        Dim iPosFactura As Integer
         Dim iPos As Integer
-        If iTotal = 0 Then
+        If iTotal = 0 And iTotalFactura = 0 Then
             Label12.Text = "No. de registros"
         Else
             iPos = GastoBindingSource.Position + 1
+            iPosFactura = FacturaBindingSource1.Position + 1
             Label12.Text = iPos.ToString & "de" & iTotal.ToString()
         End If
     End Sub
@@ -63,11 +68,24 @@
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         GastoBindingSource.Position = -1
+        FacturaBindingSource1.Position = -1
         MostrarPosicion()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         GastoBindingSource.Position = +1
+        FacturaBindingSource1.Position = +1
+        MostrarPosicion()
+    End Sub
+
+    Private Sub mostarTotal()
+        Dim total As Integer
+        If Boolean.Parse(tbIVA.Text) = True Then
+            total = Integer.Parse(tbSubtotal.Text) + (0.15 * Integer.Parse(tbSubtotal.Text))
+            tbTotal.Text = total.ToString
+        End If
+        total = Integer.Parse(tbSubtotal.Text)
+        tbTotal.Text = tbSubtotal.Text
         MostrarPosicion()
     End Sub
 End Class

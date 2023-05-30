@@ -127,22 +127,22 @@ Public Class FormPrincipal
 
     Private Sub DataGridView1_CellContentClick_3(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         If e.RowIndex >= 0 AndAlso e.ColumnIndex Then
-            Dim idProyecto As Integer = e.RowIndex + 1
+            Dim idProyecto As Integer = DataGridView1.SelectedCells(0).Value
             MessageBox.Show("Botón presionado en la con el id de proyecto: " & idProyecto.ToString())
             FormProyectoX.Show()
-            Me.Close()
+            Me.Hide()
         End If
     End Sub
 
     Function devolverID(sender As Object, e As DataGridViewCellEventArgs) As Integer
         Dim idProyecto As Integer
-        idProyecto = e.RowIndex + 1
+        idProyecto = DataGridView1.SelectedCells(0).Value
         Return idProyecto
     End Function
 
     Function devolverPresupuestoInicial() As Single
         Dim presupuestoInicial As Object
-        presupuestoInicial = DataGridView1.SelectedCells(5).Value
+        presupuestoInicial = DataGridView1.SelectedCells(6).Value
         Return Single.Parse(presupuestoInicial)
     End Function
 
