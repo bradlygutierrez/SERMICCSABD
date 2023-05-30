@@ -129,9 +129,22 @@ Public Class FormPrincipal
         If e.RowIndex >= 0 AndAlso e.ColumnIndex Then
             Dim idProyecto As Integer = e.RowIndex + 1
             MessageBox.Show("Botón presionado en la con el id de proyecto: " & idProyecto.ToString())
-
+            FormProyectoX.Show()
+            Me.Close()
         End If
     End Sub
+
+    Function devolverID(sender As Object, e As DataGridViewCellEventArgs) As Integer
+        Dim idProyecto As Integer
+        idProyecto = e.RowIndex + 1
+        Return idProyecto
+    End Function
+
+    Function devolverPresupuestoInicial() As Single
+        Dim presupuestoInicial As Object
+        presupuestoInicial = DataGridView1.SelectedCells(5).Value
+        Return Single.Parse(presupuestoInicial)
+    End Function
 
     Private Sub FillBy2ToolStripButton_Click(sender As Object, e As EventArgs)
         Try

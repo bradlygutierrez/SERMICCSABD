@@ -1,0 +1,16 @@
+# Ignorar archivos de dependencias de Visual Studio
+# Carpeta bin
+/bin/
+/obj/
+
+# Ignorar archivos de configuración de Visual Studio
+*.suo
+*.user
+*.sln.docstates
+*.vs/
+*.exe
+
+# Ignorar archivos de caché de Visual Studio
+*.bak
+*.cache
+*.csproj.user

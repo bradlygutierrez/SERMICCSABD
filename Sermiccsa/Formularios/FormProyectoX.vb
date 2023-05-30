@@ -1,14 +1,14 @@
 ﻿Public Class FormProyectoX
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+    Private Sub Label13_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub FormProyectoX_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        cambiarLabelSaldo()
     End Sub
 
 
@@ -34,7 +34,20 @@
         Me.Hide()
     End Sub
 
+    Private Sub cambiarLabelSaldo()
+        Dim saldoRestante As Single = FormPrincipal.devolverPresupuestoInicial() - 2
+        Label1.Text = ("$" & saldoRestante.ToString())
+    End Sub
+
+    Private Sub cambiarLabelGastos()
+        Dim gastosTotales As Single
+    End Sub
+
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 End Class
