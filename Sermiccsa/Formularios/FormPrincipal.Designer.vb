@@ -23,14 +23,23 @@ Partial Class FormPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.IdusuarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechainicioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BeneficiarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PresupuestoinicialDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProyectoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -38,29 +47,17 @@ Partial Class FormPrincipal
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ProyectoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
         Me.ProyectoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProyectoTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.proyectoTableAdapter()
         Me.BeneficiarioTableAdapter1 = New Sermiccsa.sermiccsaDataSetTableAdapters.beneficiarioTableAdapter()
         Me.TableAdapterManager = New Sermiccsa.sermiccsaDataSetTableAdapters.TableAdapterManager()
         Me.ProyectoBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.IdusuarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechainicioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BeneficiarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PresupuestoinicialDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FillBy2ToolStrip = New System.Windows.Forms.ToolStrip()
-        Me.FillBy2ToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProyectoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProyectoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProyectoBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FillBy2ToolStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -68,108 +65,10 @@ Partial Class FormPrincipal
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Location = New System.Drawing.Point(143, 164)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1052, 416)
         Me.Panel1.TabIndex = 0
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(1100, 89)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(43, 39)
-        Me.Button1.TabIndex = 18
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(1049, 89)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(43, 39)
-        Me.Button2.TabIndex = 19
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.TextBox1.Location = New System.Drawing.Point(143, 89)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(400, 39)
-        Me.TextBox1.TabIndex = 20
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(543, 89)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(43, 39)
-        Me.Button3.TabIndex = 21
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(1152, 89)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(43, 39)
-        Me.Button5.TabIndex = 22
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.White
-        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(1152, 617)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(43, 39)
-        Me.Button4.TabIndex = 23
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(896, 617)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Padding = New System.Windows.Forms.Padding(1)
-        Me.Label1.Size = New System.Drawing.Size(255, 39)
-        Me.Label1.TabIndex = 24
-        Me.Label1.Text = "Imprimir Presupuesto"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'DataGridView1
         '
@@ -189,47 +88,6 @@ Partial Class FormPrincipal
         Me.DataGridView1.Size = New System.Drawing.Size(1052, 416)
         Me.DataGridView1.TabIndex = 0
         '
-        'ProyectoBindingSource1
-        '
-        Me.ProyectoBindingSource1.DataMember = "proyecto"
-        Me.ProyectoBindingSource1.DataSource = Me.SermiccsaDataSet
-        '
-        'SermiccsaDataSet
-        '
-        Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
-        Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProyectoBindingSource
-        '
-        Me.ProyectoBindingSource.DataMember = "proyecto"
-        Me.ProyectoBindingSource.DataSource = Me.SermiccsaDataSet
-        '
-        'ProyectoTableAdapter
-        '
-        Me.ProyectoTableAdapter.ClearBeforeFill = True
-        '
-        'BeneficiarioTableAdapter1
-        '
-        Me.BeneficiarioTableAdapter1.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.beneficiarioTableAdapter = Me.BeneficiarioTableAdapter1
-        Me.TableAdapterManager.etapaTableAdapter = Nothing
-        Me.TableAdapterManager.facturaTableAdapter = Nothing
-        Me.TableAdapterManager.gastoTableAdapter = Nothing
-        Me.TableAdapterManager.preguntaTableAdapter = Nothing
-        Me.TableAdapterManager.proyectoTableAdapter = Me.ProyectoTableAdapter
-        Me.TableAdapterManager.rubroTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Sermiccsa.sermiccsaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.usuarioTableAdapter = Nothing
-        '
-        'ProyectoBindingSource2
-        '
-        Me.ProyectoBindingSource2.DataMember = "proyecto"
-        Me.ProyectoBindingSource2.DataSource = Me.SermiccsaDataSet
-        '
         'IdusuarioDataGridViewTextBoxColumn
         '
         Me.IdusuarioDataGridViewTextBoxColumn.DataPropertyName = "id_usuario"
@@ -244,12 +102,15 @@ Partial Class FormPrincipal
         'NombreDataGridViewTextBoxColumn
         '
         Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
         Me.NombreDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
         Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
         Me.NombreDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
         Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NombreDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.NombreDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         Me.NombreDataGridViewTextBoxColumn.Width = 125
         '
         'DescripcionDataGridViewTextBoxColumn
@@ -296,22 +157,144 @@ Partial Class FormPrincipal
         Me.PresupuestoinicialDataGridViewTextBoxColumn.ReadOnly = True
         Me.PresupuestoinicialDataGridViewTextBoxColumn.Width = 125
         '
-        'FillBy2ToolStrip
+        'ProyectoBindingSource1
         '
-        Me.FillBy2ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.FillBy2ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillBy2ToolStripButton})
-        Me.FillBy2ToolStrip.Location = New System.Drawing.Point(0, 0)
-        Me.FillBy2ToolStrip.Name = "FillBy2ToolStrip"
-        Me.FillBy2ToolStrip.Size = New System.Drawing.Size(112, 25)
-        Me.FillBy2ToolStrip.TabIndex = 25
-        Me.FillBy2ToolStrip.Text = "FillBy2ToolStrip"
+        Me.ProyectoBindingSource1.DataMember = "proyecto"
+        Me.ProyectoBindingSource1.DataSource = Me.SermiccsaDataSet
         '
-        'FillBy2ToolStripButton
+        'SermiccsaDataSet
         '
-        Me.FillBy2ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FillBy2ToolStripButton.Name = "FillBy2ToolStripButton"
-        Me.FillBy2ToolStripButton.Size = New System.Drawing.Size(56, 22)
-        Me.FillBy2ToolStripButton.Text = "FillBy2"
+        Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
+        Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(1100, 89)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(43, 39)
+        Me.Button1.TabIndex = 18
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(1049, 89)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(43, 39)
+        Me.Button2.TabIndex = 19
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.TextBox1.Location = New System.Drawing.Point(143, 89)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(400, 39)
+        Me.TextBox1.TabIndex = 20
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(543, 89)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(43, 39)
+        Me.Button3.TabIndex = 21
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(1152, 89)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(43, 39)
+        Me.Button5.TabIndex = 22
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.White
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
+        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(1152, 617)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(43, 39)
+        Me.Button4.TabIndex = 23
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(896, 617)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Padding = New System.Windows.Forms.Padding(1)
+        Me.Label1.Size = New System.Drawing.Size(255, 39)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "Imprimir Presupuesto"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ProyectoBindingSource
+        '
+        Me.ProyectoBindingSource.DataMember = "proyecto"
+        Me.ProyectoBindingSource.DataSource = Me.SermiccsaDataSet
+        '
+        'ProyectoTableAdapter
+        '
+        Me.ProyectoTableAdapter.ClearBeforeFill = True
+        '
+        'BeneficiarioTableAdapter1
+        '
+        Me.BeneficiarioTableAdapter1.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.beneficiarioTableAdapter = Me.BeneficiarioTableAdapter1
+        Me.TableAdapterManager.etapaTableAdapter = Nothing
+        Me.TableAdapterManager.facturaTableAdapter = Nothing
+        Me.TableAdapterManager.gastoTableAdapter = Nothing
+        Me.TableAdapterManager.preguntaTableAdapter = Nothing
+        Me.TableAdapterManager.proyectoTableAdapter = Me.ProyectoTableAdapter
+        Me.TableAdapterManager.rubroTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Sermiccsa.sermiccsaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.usuarioTableAdapter = Nothing
+        '
+        'ProyectoBindingSource2
+        '
+        Me.ProyectoBindingSource2.DataMember = "proyecto"
+        Me.ProyectoBindingSource2.DataSource = Me.SermiccsaDataSet
         '
         'FormPrincipal
         '
@@ -319,7 +302,6 @@ Partial Class FormPrincipal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1341, 681)
-        Me.Controls.Add(Me.FillBy2ToolStrip)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button5)
@@ -340,8 +322,6 @@ Partial Class FormPrincipal
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProyectoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProyectoBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FillBy2ToolStrip.ResumeLayout(False)
-        Me.FillBy2ToolStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -363,11 +343,9 @@ Partial Class FormPrincipal
     Friend WithEvents ProyectoBindingSource2 As BindingSource
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents IdusuarioDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewButtonColumn
     Friend WithEvents DescripcionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents FechainicioDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents BeneficiarioDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PresupuestoinicialDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents FillBy2ToolStrip As ToolStrip
-    Friend WithEvents FillBy2ToolStripButton As ToolStripButton
 End Class
