@@ -42,7 +42,6 @@ C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debu
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
-C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEtapas.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
@@ -76,7 +75,6 @@ D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.exe
 D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.xml
 D:\Escritorio\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.pdb
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
-C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPadre.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
 C:\Users\USER\Desktop\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe.config
@@ -203,3 +201,6 @@ D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agen
 D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.exe
 D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.xml
 D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD 25.5.2023\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
+C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
