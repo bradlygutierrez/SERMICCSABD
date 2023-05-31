@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EA5DDDCD-C5BC-41B2-9129-7B8A7E3B28C5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sermiccsa.My.MyApplication</StartupObject>
+    <StartupObject>Sermiccsa.FormAjustes</StartupObject>
     <RootNamespace>Sermiccsa</RootNamespace>
     <AssemblyName>Sermiccsa</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -89,6 +89,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao\DBeneficiario.vb" />
     <Compile Include="Dao\DEtapa.vb" />
     <Compile Include="Dao\DPregunta.vb" />
     <Compile Include="Dao\DProyecto.vb" />
