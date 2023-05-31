@@ -89,8 +89,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dao\dProyecto.vb" />
+    <Compile Include="Dao\DEtapa.vb" />
+    <Compile Include="Dao\DPregunta.vb" />
+    <Compile Include="Dao\DProyecto.vb" />
+    <Compile Include="Dao\DUsuario.vb" />
+    <Compile Include="Entidades\Beneficiario.vb" />
+    <Compile Include="Entidades\Etapa.vb" />
+    <Compile Include="Entidades\Factura.vb" />
+    <Compile Include="Entidades\Gasto.vb" />
+    <Compile Include="Entidades\Pregunta.vb" />
     <Compile Include="Entidades\Proyecto.vb" />
+    <Compile Include="Entidades\Rubro.vb" />
+    <Compile Include="Entidades\Usuario.vb" />
     <Compile Include="Formularios\FormCambiarContraseña.Designer.vb">
       <DependentUpon>FormCambiarContraseña.vb</DependentUpon>
     </Compile>

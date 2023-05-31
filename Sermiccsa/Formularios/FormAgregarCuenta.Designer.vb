@@ -32,10 +32,12 @@ Partial Class FormAgregarCuenta
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btRegistrarUsuario = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.tbRespuesta = New System.Windows.Forms.TextBox()
+        Me.UsuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
         Me.cbPregunta = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbVerificarContrasena = New System.Windows.Forms.TextBox()
@@ -47,13 +49,11 @@ Partial Class FormAgregarCuenta
         Me.tbUsuario = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
-        Me.UsuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PreguntaBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsuarioTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.usuarioTableAdapter()
         Me.PreguntaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PreguntaTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.preguntaTableAdapter()
         Me.PreguntaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PreguntaBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,12 +61,12 @@ Partial Class FormAgregarCuenta
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PreguntaBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PreguntaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PreguntaBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PreguntaBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -79,7 +79,7 @@ Partial Class FormAgregarCuenta
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btRegistrarUsuario)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.tbRespuesta)
@@ -95,7 +95,7 @@ Partial Class FormAgregarCuenta
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(265, 34)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 598)
         Me.Panel1.TabIndex = 2
@@ -104,7 +104,7 @@ Partial Class FormAgregarCuenta
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
         Me.PictureBox7.Location = New System.Drawing.Point(397, 422)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox7.TabIndex = 20
@@ -114,7 +114,7 @@ Partial Class FormAgregarCuenta
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
         Me.PictureBox6.Location = New System.Drawing.Point(65, 422)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox6.TabIndex = 19
@@ -124,7 +124,7 @@ Partial Class FormAgregarCuenta
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.Location = New System.Drawing.Point(65, 282)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox5.TabIndex = 18
@@ -134,7 +134,7 @@ Partial Class FormAgregarCuenta
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(397, 352)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox4.TabIndex = 17
@@ -144,7 +144,7 @@ Partial Class FormAgregarCuenta
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(65, 352)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox3.TabIndex = 16
@@ -154,7 +154,7 @@ Partial Class FormAgregarCuenta
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(397, 279)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(32, 30)
         Me.PictureBox2.TabIndex = 2
@@ -167,27 +167,27 @@ Partial Class FormAgregarCuenta
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(23, 17)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 54)
         Me.Button2.TabIndex = 15
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btRegistrarUsuario
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(261, 500)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(220, 49)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Registrar Usuario "
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btRegistrarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btRegistrarUsuario.FlatAppearance.BorderSize = 0
+        Me.btRegistrarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btRegistrarUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.btRegistrarUsuario.ForeColor = System.Drawing.Color.White
+        Me.btRegistrarUsuario.Location = New System.Drawing.Point(261, 500)
+        Me.btRegistrarUsuario.Margin = New System.Windows.Forms.Padding(4)
+        Me.btRegistrarUsuario.Name = "btRegistrarUsuario"
+        Me.btRegistrarUsuario.Size = New System.Drawing.Size(220, 49)
+        Me.btRegistrarUsuario.TabIndex = 14
+        Me.btRegistrarUsuario.Text = "Registrar Usuario "
+        Me.btRegistrarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btRegistrarUsuario.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -215,23 +215,31 @@ Partial Class FormAgregarCuenta
         '
         Me.tbRespuesta.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "respuesta", True))
         Me.tbRespuesta.Location = New System.Drawing.Point(431, 427)
-        Me.tbRespuesta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbRespuesta.Margin = New System.Windows.Forms.Padding(4)
         Me.tbRespuesta.Multiline = True
         Me.tbRespuesta.Name = "tbRespuesta"
         Me.tbRespuesta.Size = New System.Drawing.Size(267, 24)
         Me.tbRespuesta.TabIndex = 11
         '
+        'UsuarioBindingSource
+        '
+        Me.UsuarioBindingSource.DataMember = "usuario"
+        Me.UsuarioBindingSource.DataSource = Me.SermiccsaDataSet
+        '
+        'SermiccsaDataSet
+        '
+        Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
+        Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'cbPregunta
         '
-        Me.cbPregunta.DataSource = Me.PreguntaBindingSource2
-        Me.cbPregunta.DisplayMember = "pregunta"
+        Me.cbPregunta.DataBindings.Add(New System.Windows.Forms.Binding("SelectedItem", Me.UsuarioBindingSource, "id_pregunta", True))
         Me.cbPregunta.FormattingEnabled = True
         Me.cbPregunta.Location = New System.Drawing.Point(99, 426)
-        Me.cbPregunta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbPregunta.Margin = New System.Windows.Forms.Padding(4)
         Me.cbPregunta.Name = "cbPregunta"
         Me.cbPregunta.Size = New System.Drawing.Size(261, 24)
         Me.cbPregunta.TabIndex = 10
-        Me.cbPregunta.ValueMember = "id_pregunta"
         '
         'Label5
         '
@@ -247,7 +255,7 @@ Partial Class FormAgregarCuenta
         'tbVerificarContrasena
         '
         Me.tbVerificarContrasena.Location = New System.Drawing.Point(431, 357)
-        Me.tbVerificarContrasena.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbVerificarContrasena.Margin = New System.Windows.Forms.Padding(4)
         Me.tbVerificarContrasena.Multiline = True
         Me.tbVerificarContrasena.Name = "tbVerificarContrasena"
         Me.tbVerificarContrasena.Size = New System.Drawing.Size(267, 24)
@@ -268,7 +276,7 @@ Partial Class FormAgregarCuenta
         '
         Me.tbContrasena.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "clave", True))
         Me.tbContrasena.Location = New System.Drawing.Point(99, 357)
-        Me.tbContrasena.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbContrasena.Margin = New System.Windows.Forms.Padding(4)
         Me.tbContrasena.Multiline = True
         Me.tbContrasena.Name = "tbContrasena"
         Me.tbContrasena.Size = New System.Drawing.Size(261, 24)
@@ -289,7 +297,7 @@ Partial Class FormAgregarCuenta
         '
         Me.tbCorreo.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "correo", True))
         Me.tbCorreo.Location = New System.Drawing.Point(99, 284)
-        Me.tbCorreo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbCorreo.Margin = New System.Windows.Forms.Padding(4)
         Me.tbCorreo.Multiline = True
         Me.tbCorreo.Name = "tbCorreo"
         Me.tbCorreo.Size = New System.Drawing.Size(261, 24)
@@ -310,7 +318,7 @@ Partial Class FormAgregarCuenta
         '
         Me.tbUsuario.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "nombre", True))
         Me.tbUsuario.Location = New System.Drawing.Point(431, 284)
-        Me.tbUsuario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbUsuario.Margin = New System.Windows.Forms.Padding(4)
         Me.tbUsuario.Multiline = True
         Me.tbUsuario.Name = "tbUsuario"
         Me.tbUsuario.Size = New System.Drawing.Size(267, 24)
@@ -320,7 +328,7 @@ Partial Class FormAgregarCuenta
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(293, 42)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(171, 158)
         Me.PictureBox1.TabIndex = 1
@@ -338,15 +346,10 @@ Partial Class FormAgregarCuenta
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Registrar Usuario "
         '
-        'SermiccsaDataSet
+        'PreguntaBindingSource2
         '
-        Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
-        Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'UsuarioBindingSource
-        '
-        Me.UsuarioBindingSource.DataMember = "usuario"
-        Me.UsuarioBindingSource.DataSource = Me.SermiccsaDataSet
+        Me.PreguntaBindingSource2.DataMember = "pregunta"
+        Me.PreguntaBindingSource2.DataSource = Me.SermiccsaDataSet
         '
         'UsuarioTableAdapter
         '
@@ -365,11 +368,6 @@ Partial Class FormAgregarCuenta
         '
         Me.PreguntaBindingSource1.DataMember = "pregunta"
         Me.PreguntaBindingSource1.DataSource = Me.SermiccsaDataSet
-        '
-        'PreguntaBindingSource2
-        '
-        Me.PreguntaBindingSource2.DataMember = "pregunta"
-        Me.PreguntaBindingSource2.DataSource = Me.SermiccsaDataSet
         '
         'FormAgregarCuenta
         '
@@ -391,12 +389,12 @@ Partial Class FormAgregarCuenta
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PreguntaBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PreguntaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PreguntaBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PreguntaBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -409,7 +407,7 @@ Partial Class FormAgregarCuenta
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btRegistrarUsuario As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents tbRespuesta As TextBox

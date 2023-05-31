@@ -1,22 +1,8 @@
-﻿Public Class FormAjustes
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
+﻿Imports System.Data.SqlClient
 
-    End Sub
-
-    Private Sub Label6_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs)
-
-    End Sub
+Public Class FormAjustes
 
     Private Sub FormAjustes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
 
     End Sub
 
@@ -25,31 +11,33 @@
         Me.Close()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
+    Private Sub btCambiarContrasena_Click(sender As Object, e As EventArgs) Handles btCambiarContrasena.Click
+        Dim miTabla As DataTable = SermiccsaDataSet.usuario
+        Dim cfilas As DataRowCollection = miTabla.Rows
+        Dim filaUsuarioActual As DataRow = miTabla.Rows(0)
+        Console.WriteLine(filaUsuarioActual)
+        Try
+            filaUsuarioActual(4) = tbNuevaContrasena.Text
+        Catch ex As System.Data.ConstraintException
+            MessageBox.Show(ex.Message)
+        End Try
 
-    End Sub
+        Dim cmd As New SqlCommand()
+        If Me.Validate Then
+            Try
+                If (SermiccsaDataSet.HasChanges()) Then
+                    Me.UsuarioBindingSource.EndEdit()
+                    Me.UsuarioTableAdapter.Update(Me.SermiccsaDataSet.usuario)
+                    MessageBox.Show("Etapa Agregada!!!")
+                End If
+            Catch ex As Exception
+                MessageBox.Show("Error: " + ex.Message)
+            End Try
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Label3_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Else
+            MessageBox.Show(Me, "Errores de validacion.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+        FormProyectoX.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -1,18 +1,22 @@
-﻿Public Class FormAgregarEtapa
+﻿
+Public Class FormAgregarEtapa
     Private Sub FormAgregarEtapa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Close()
-    End Sub
+    Private Sub btAgregarEtapa_Click(sender As Object, e As EventArgs) Handles btAgregarEtapa.Click
+        Dim etapa As New Etapa()
+        etapa.IdProyecto = 1
+        etapa.Nombre = tbNombreEtapa.Text
+        etapa.NumeroEtapa = tbNumeroEtapa.Text
+        etapa.Descripcion = tbDescripcion.Text
+        etapa.Presupuesto = tbPresupuesto.Text
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Dim dEtapa As New DEtapa
+        If Not dEtapa.insertarEtapa(etapa) Then
+            MsgBox("Error al guardar la etapa", MsgBoxStyle.Critical, "Nuevo etapa")
+            Exit Sub
+        End If
+        MsgBox("Estudio guardado correctamente", MsgBoxStyle.Information, "Nuevo etapa")
     End Sub
 End Class
