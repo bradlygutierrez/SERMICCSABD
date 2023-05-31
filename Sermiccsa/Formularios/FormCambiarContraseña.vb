@@ -4,20 +4,15 @@
     Dim usuario As New Usuario
 
     Private Sub BtCambiarPw_Click(sender As Object, e As EventArgs) Handles btCambiarContrasena.Click
-        Dim dUsuario As New DUsuario
 
+        If tbNuevaContraseña.Text <> tbConfirmarContraseña.Text Then
+            MsgBox("Las contrasenas no coinciden", MsgBoxStyle.Critical, "Editar Contrasena")
+            Exit Sub
+        End If
+
+        usuario.respuesta = tbRespuesta.Text
         usuario.Nombre = tbUsuario.Text
         usuario.Clave = tbNuevaContraseña.Text
-        usuario.respuesta = tbRespuesta.Text
-
-        'Encontrando los datos del usuario
-        Dim listaUsuarios = dUsuario.listarUsuarios()
-        For Each row As DataRow In listaUsuarios.Tables(0).Rows
-            If row("Nombre").ToString() = usuario.Nombre Then
-                usuario.IdPregunta = row("id_pregunta").ToString()
-                usuario.Correo = row("correo").ToString()
-            End If
-        Next
 
         If Not dUsuario.actualizarContrasena(usuario) Then
             MsgBox("Error al actualizar la contrasena", MsgBoxStyle.Critical, "Editar Contrasena")
