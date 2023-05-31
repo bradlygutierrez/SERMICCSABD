@@ -27,4 +27,19 @@ Public Class DEtapa
         Return resultado
     End Function
 
+    Public Function listarEtapas() As DataSet
+        Dim ds As New DataSet
+        Try
+            Dim conn As New SqlConnection(strConn)
+            Dim tsql As String = "SELECT id_etapa, nombre FROM dbo.etapa"
+            Dim da As New SqlDataAdapter(tsql, conn)
+
+            da.Fill(ds)
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+            MsgBox("Ocurrio un error al listar las etapas", MsgBoxStyle.Information, "Listar etapas")
+        End Try
+        Return ds
+    End Function
+
 End Class

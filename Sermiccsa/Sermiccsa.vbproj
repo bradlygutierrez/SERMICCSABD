@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EA5DDDCD-C5BC-41B2-9129-7B8A7E3B28C5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sermiccsa.FormIniciarSesion</StartupObject>
+    <StartupObject>Sermiccsa.FormGasto</StartupObject>
     <RootNamespace>Sermiccsa</RootNamespace>
     <AssemblyName>Sermiccsa</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -91,8 +91,11 @@
   <ItemGroup>
     <Compile Include="Dao\DBeneficiario.vb" />
     <Compile Include="Dao\DEtapa.vb" />
+    <Compile Include="Dao\DFactura.vb" />
+    <Compile Include="Dao\DGasto.vb" />
     <Compile Include="Dao\DPregunta.vb" />
     <Compile Include="Dao\DProyecto.vb" />
+    <Compile Include="Dao\DRubro.vb" />
     <Compile Include="Dao\DUsuario.vb" />
     <Compile Include="Entidades\Beneficiario.vb" />
     <Compile Include="Entidades\Etapa.vb" />

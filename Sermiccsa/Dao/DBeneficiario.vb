@@ -45,4 +45,19 @@ Public Class DBeneficiario
         Return b
     End Function
 
+    Public Function listarBeneficiarios() As DataSet
+        Dim ds As New DataSet
+        Try
+            Dim conn As New SqlConnection(strConn)
+            Dim tsql As String = "SELECT id_beneficiario, nombre FROM dbo.beneficiario"
+            Dim da As New SqlDataAdapter(tsql, conn)
+
+            da.Fill(ds)
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+            MsgBox("Ocurrio un error al listar los beneficiarios", MsgBoxStyle.Information, "Listar beneficiarios")
+        End Try
+        Return ds
+    End Function
+
 End Class
