@@ -24,9 +24,10 @@
         Me.BeneficiarioTableAdapter.Fill(Me.SermiccsaDataSet.beneficiario)
         Me.GastoTableAdapter.Fill(Me.SermiccsaDataSet.gasto)
         Me.FacturaTableAdapter.Fill(Me.SermiccsaDataSet.factura)
-        Me.mostarTotal()
-
+        Dim iva As Boolean = Boolean.Parse(tbIVA.Text)
+        Dim subtotal As Single = Single.Parse(tbSubtotal.Text)
         MostrarPosicion()
+        mostarTotal(iva, subtotal)
 
     End Sub
     Public Sub MostrarPosicion()
@@ -69,23 +70,33 @@
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         GastoBindingSource.Position = -1
         FacturaBindingSource1.Position = -1
+        Dim iva As Boolean = Boolean.Parse(tbIVA.Text)
+        Dim subtotal As Single = Single.Parse(tbSubtotal.Text)
         MostrarPosicion()
+        mostarTotal(iva, subtotal)
     End Sub
 
+    Private Sub mostarTotal(ByVal iva As Boolean, ByVal subtotal As Single)
+        Dim total As Integer
+        If iva = True Then
+            total = subtotal
+            total = total * 1.15
+            tbTotal.Text = total.ToString
+        Else
+            total = Integer.Parse(tbSubtotal.Text)
+            tbTotal.Text = subtotal.ToString
+
+        End If
+    End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         GastoBindingSource.Position = +1
         FacturaBindingSource1.Position = +1
         MostrarPosicion()
+        Dim iva As Boolean = Boolean.Parse(tbIVA.Text)
+        Dim subtotal As Single = Single.Parse(tbSubtotal.Text)
+        MostrarPosicion()
+        mostarTotal(iva, subtotal)
     End Sub
 
-    Private Sub mostarTotal()
-        Dim total As Integer
-        If Boolean.Parse(tbIVA.Text) = True Then
-            total = Integer.Parse(tbSubtotal.Text) + (0.15 * Integer.Parse(tbSubtotal.Text))
-            tbTotal.Text = total.ToString
-        End If
-        total = Integer.Parse(tbSubtotal.Text)
-        tbTotal.Text = tbSubtotal.Text
-        MostrarPosicion()
-    End Sub
+
 End Class
