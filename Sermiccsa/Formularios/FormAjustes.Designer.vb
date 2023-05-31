@@ -36,12 +36,12 @@ Partial Class FormAjustes
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.tbNuevaContrasena = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.tbContrasenaActual = New System.Windows.Forms.TextBox()
+        Me.btCambiarContrasena = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnCambiarUsuario = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -95,7 +95,7 @@ Partial Class FormAjustes
         Me.btnVolver.ForeColor = System.Drawing.Color.White
         Me.btnVolver.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnVolver.Location = New System.Drawing.Point(35, 33)
-        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(50, 55)
         Me.btnVolver.TabIndex = 13
@@ -110,10 +110,10 @@ Partial Class FormAjustes
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.tbNuevaContrasena)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.tbContrasenaActual)
+        Me.GroupBox1.Controls.Add(Me.btCambiarContrasena)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox1.Location = New System.Drawing.Point(49, 124)
@@ -182,14 +182,15 @@ Partial Class FormAjustes
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Ingrese la nueva contraseña" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'TextBox3
+        'tbNuevaContrasena
         '
-        Me.TextBox3.Location = New System.Drawing.Point(81, 120)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox3.Size = New System.Drawing.Size(265, 27)
-        Me.TextBox3.TabIndex = 6
+        Me.tbNuevaContrasena.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "clave", True))
+        Me.tbNuevaContrasena.Location = New System.Drawing.Point(81, 120)
+        Me.tbNuevaContrasena.Multiline = True
+        Me.tbNuevaContrasena.Name = "tbNuevaContrasena"
+        Me.tbNuevaContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbNuevaContrasena.Size = New System.Drawing.Size(265, 27)
+        Me.tbNuevaContrasena.TabIndex = 6
         '
         'Label3
         '
@@ -201,30 +202,31 @@ Partial Class FormAjustes
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Ingrese la contraseña actual " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'TextBox2
+        'tbContrasenaActual
         '
-        Me.TextBox2.Location = New System.Drawing.Point(81, 53)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(265, 27)
-        Me.TextBox2.TabIndex = 4
+        Me.tbContrasenaActual.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "clave", True))
+        Me.tbContrasenaActual.Location = New System.Drawing.Point(81, 53)
+        Me.tbContrasenaActual.Multiline = True
+        Me.tbContrasenaActual.Name = "tbContrasenaActual"
+        Me.tbContrasenaActual.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbContrasenaActual.Size = New System.Drawing.Size(265, 27)
+        Me.tbContrasenaActual.TabIndex = 4
         '
-        'Button1
+        'btCambiarContrasena
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(443, 187)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(95, 34)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Cambiar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btCambiarContrasena.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.btCambiarContrasena.FlatAppearance.BorderSize = 0
+        Me.btCambiarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btCambiarContrasena.Location = New System.Drawing.Point(443, 187)
+        Me.btCambiarContrasena.Name = "btCambiarContrasena"
+        Me.btCambiarContrasena.Size = New System.Drawing.Size(95, 34)
+        Me.btCambiarContrasena.TabIndex = 0
+        Me.btCambiarContrasena.Text = "Cambiar"
+        Me.btCambiarContrasena.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.btnCambiarUsuario)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.PictureBox2)
         Me.GroupBox2.Controls.Add(Me.TextBox1)
@@ -237,17 +239,17 @@ Partial Class FormAjustes
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Cambiar nombre de usuario"
         '
-        'Button2
+        'btnCambiarUsuario
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(443, 76)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(95, 34)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Cambiar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnCambiarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.btnCambiarUsuario.FlatAppearance.BorderSize = 0
+        Me.btnCambiarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCambiarUsuario.Location = New System.Drawing.Point(443, 76)
+        Me.btnCambiarUsuario.Name = "btnCambiarUsuario"
+        Me.btnCambiarUsuario.Size = New System.Drawing.Size(95, 34)
+        Me.btnCambiarUsuario.TabIndex = 4
+        Me.btnCambiarUsuario.Text = "Cambiar"
+        Me.btnCambiarUsuario.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -271,6 +273,7 @@ Partial Class FormAjustes
         '
         'TextBox1
         '
+        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "nombre", True))
         Me.TextBox1.Location = New System.Drawing.Point(81, 67)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -312,7 +315,7 @@ Partial Class FormAjustes
         Me.Controls.Add(Me.Label1)
         Me.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormAjustes"
         Me.Text = "FormAjustes"
         CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -337,20 +340,20 @@ Partial Class FormAjustes
     Friend WithEvents btnVolver As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btCambiarContrasena As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents tbNuevaContrasena As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents tbContrasenaActual As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnCambiarUsuario As Button
 End Class

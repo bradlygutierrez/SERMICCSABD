@@ -1,11 +1,4 @@
 ﻿Public Class FormProyectoX
-    Private Sub Label10_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label13_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub FormProyectoX_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cambiarLabelSaldo()
@@ -43,11 +36,4 @@
         Dim gastosTotales As Single
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
 End Class

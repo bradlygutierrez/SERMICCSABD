@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.ComponentModel
-Public Class dProyecto
+Public Class DProyecto
     Dim strConn As String = My.Settings.sermiccsaConnectionString1.ToString()
 
     Public Function AgregarProyecto() As Boolean

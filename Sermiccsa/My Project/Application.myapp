@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MyApplicationData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <MySubMain>true</MySubMain>
+<<<<<<< HEAD
+  <MainForm>FormCambiarContraseña</MainForm>
+=======
   <MainForm>FormPrincipal</MainForm>
+>>>>>>> 1a6a5d93c767130d3f9052069960263b755fd573
   <SingleInstance>false</SingleInstance>
   <ShutdownMode>0</ShutdownMode>
   <EnableVisualStyles>true</EnableVisualStyles>

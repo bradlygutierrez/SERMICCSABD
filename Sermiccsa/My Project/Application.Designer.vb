@@ -32,7 +32,11 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
+
+            Me.MainForm = Global.Sermiccsa.FormCambiarContraseña
+
             Me.MainForm = Global.Sermiccsa.FormPrincipal
+
         End Sub
     End Class
 End Namespace
