@@ -148,5 +148,26 @@ Public Class DUsuario
         Return usuarios
     End Function
 
+    Public Function VerificarCredenciales(ByVal nombreUsuario As String, ByVal clave As String) As Boolean
+        Dim existeUsuario As Boolean = False
+        Try
+            Dim conn As New SqlConnection(strConexion)
+            Dim tsql As String = "SELECT COUNT(*) FROM usuario WHERE nombre = @nombre AND clave = @clave"
+            Dim cmd As New SqlCommand(tsql, conn)
+            cmd.Parameters.AddWithValue("@nombre", nombreUsuario)
+            cmd.Parameters.AddWithValue("@clave", clave)
+
+            conn.Open()
+            Dim resultado As Integer = CInt(cmd.ExecuteScalar())
+            If resultado > 0 Then
+                existeUsuario = True
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+            MsgBox("Ocurrió un error al verificar las credenciales", MsgBoxStyle.Critical, "Verificar Credenciales")
+        End Try
+
+        Return existeUsuario
+    End Function
 
 End Class

@@ -1,10 +1,7 @@
 ﻿Public Class FormIniciarSesion
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        FormPrincipal.Show()
 
-
-    End Sub
+    Dim dUsuario As New DUsuario
+    Dim usuario As New Usuario
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         FormAgregarCuenta.Show()
@@ -16,16 +13,16 @@
 
         p.StartFigure()
         p.AddArc(New Rectangle(0, 0, borderRadius, borderRadius), 180, 90)
-        p.AddLine(borderRadius, 0, Button1.Width - borderRadius, 0)
-        p.AddArc(New Rectangle(Button1.Width - borderRadius, 0, borderRadius, borderRadius), -90, 90)
-        p.AddLine(Button1.Width, borderRadius, Button1.Width, Button1.Height - borderRadius)
-        p.AddArc(New Rectangle(Button1.Width - borderRadius, Button1.Height - borderRadius, borderRadius, borderRadius), 0, 90)
-        p.AddLine(Button1.Width - borderRadius, Button1.Height, borderRadius, Button1.Height)
-        p.AddArc(New Rectangle(0, Button1.Height - borderRadius, borderRadius, borderRadius), 90, 90)
+        p.AddLine(borderRadius, 0, btIniciarSesion.Width - borderRadius, 0)
+        p.AddArc(New Rectangle(btIniciarSesion.Width - borderRadius, 0, borderRadius, borderRadius), -90, 90)
+        p.AddLine(btIniciarSesion.Width, borderRadius, btIniciarSesion.Width, btIniciarSesion.Height - borderRadius)
+        p.AddArc(New Rectangle(btIniciarSesion.Width - borderRadius, btIniciarSesion.Height - borderRadius, borderRadius, borderRadius), 0, 90)
+        p.AddLine(btIniciarSesion.Width - borderRadius, btIniciarSesion.Height, borderRadius, btIniciarSesion.Height)
+        p.AddArc(New Rectangle(0, btIniciarSesion.Height - borderRadius, borderRadius, borderRadius), 90, 90)
         p.CloseFigure()
 
-        Button1.Region = New Region(p)
-        Button1.BackColor = Color.FromArgb(105, 174, 105)
+        btIniciarSesion.Region = New Region(p)
+        btIniciarSesion.BackColor = Color.FromArgb(105, 174, 105)
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -47,5 +44,30 @@
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         FormCambiarContraseña.Show()
+    End Sub
+
+    Private Sub lbSalir_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbSalir.LinkClicked
+        Me.Close()
+    End Sub
+
+    Private Sub btIniciarSesion_Click(sender As Object, e As EventArgs) Handles btIniciarSesion.Click
+
+        ' Valida campos vacios
+        If tbUsuario.Text = "" Or tbContrasena.Text = "" Then
+            MsgBox("Ingrese todos los datos", MsgBoxStyle.Critical, "Iniciar Session")
+            Exit Sub
+        End If
+
+        usuario.Nombre = tbUsuario.Text
+        usuario.Clave = tbContrasena.Text
+
+        Dim resultado As Boolean = dUsuario.VerificarCredenciales(usuario.Nombre, usuario.Clave)
+        If resultado = False Then
+            MsgBox("No fue posible validar estas credenciales", MsgBoxStyle.Critical, "Inicar Sesion")
+            Exit Sub
+        End If
+        MsgBox("Crendeciales acceptadas", MsgBoxStyle.Information, "Iniciar Sesion")
+        Me.Hide()
+        FormPrincipal.Show()
     End Sub
 End Class
