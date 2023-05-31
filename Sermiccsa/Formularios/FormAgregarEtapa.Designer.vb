@@ -27,16 +27,15 @@ Partial Class FormAgregarEtapa
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbNumeroEtapa = New System.Windows.Forms.TextBox()
         Me.EtapaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.tbNombreEtapa = New System.Windows.Forms.TextBox()
+        Me.tbPresupuesto = New System.Windows.Forms.TextBox()
+        Me.btAgregarEtapa = New System.Windows.Forms.Button()
         Me.EtapaTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.etapaTableAdapter()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbDescripcion = New System.Windows.Forms.TextBox()
         CType(Me.EtapaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -85,14 +84,13 @@ Partial Class FormAgregarEtapa
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Presupuesto:"
         '
-        'TextBox1
+        'tbNumeroEtapa
         '
-        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.EtapaBindingSource, "numero_etapa", True))
-        Me.TextBox1.Location = New System.Drawing.Point(240, 74)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(233, 22)
-        Me.TextBox1.TabIndex = 11
+        Me.tbNumeroEtapa.Location = New System.Drawing.Point(240, 74)
+        Me.tbNumeroEtapa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tbNumeroEtapa.Name = "tbNumeroEtapa"
+        Me.tbNumeroEtapa.Size = New System.Drawing.Size(233, 22)
+        Me.tbNumeroEtapa.TabIndex = 11
         '
         'EtapaBindingSource
         '
@@ -104,51 +102,35 @@ Partial Class FormAgregarEtapa
         Me.SermiccsaDataSet.DataSetName = "sermiccsaDataSet"
         Me.SermiccsaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TextBox2
+        'tbNombreEtapa
         '
-        Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.EtapaBindingSource, "nombre", True))
-        Me.TextBox2.Location = New System.Drawing.Point(240, 126)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(233, 22)
-        Me.TextBox2.TabIndex = 12
+        Me.tbNombreEtapa.Location = New System.Drawing.Point(240, 126)
+        Me.tbNombreEtapa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tbNombreEtapa.Name = "tbNombreEtapa"
+        Me.tbNombreEtapa.Size = New System.Drawing.Size(233, 22)
+        Me.tbNombreEtapa.TabIndex = 12
         '
-        'TextBox3
+        'tbPresupuesto
         '
-        Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.EtapaBindingSource, "presupuesto", True))
-        Me.TextBox3.Location = New System.Drawing.Point(240, 185)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(233, 22)
-        Me.TextBox3.TabIndex = 13
+        Me.tbPresupuesto.Location = New System.Drawing.Point(240, 189)
+        Me.tbPresupuesto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tbPresupuesto.Name = "tbPresupuesto"
+        Me.tbPresupuesto.Size = New System.Drawing.Size(233, 22)
+        Me.tbPresupuesto.TabIndex = 13
         '
-        'Button1
+        'btAgregarEtapa
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(147, 328)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 34)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Agregar"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(256, 328)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(95, 34)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "Guardar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btAgregarEtapa.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btAgregarEtapa.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btAgregarEtapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btAgregarEtapa.ForeColor = System.Drawing.Color.White
+        Me.btAgregarEtapa.Location = New System.Drawing.Point(206, 328)
+        Me.btAgregarEtapa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btAgregarEtapa.Name = "btAgregarEtapa"
+        Me.btAgregarEtapa.Size = New System.Drawing.Size(100, 34)
+        Me.btAgregarEtapa.TabIndex = 14
+        Me.btAgregarEtapa.Text = "Agregar"
+        Me.btAgregarEtapa.UseVisualStyleBackColor = False
         '
         'EtapaTableAdapter
         '
@@ -165,14 +147,13 @@ Partial Class FormAgregarEtapa
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Descripción:"
         '
-        'TextBox4
+        'tbDescripcion
         '
-        Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.EtapaBindingSource, "presupuesto", True))
-        Me.TextBox4.Location = New System.Drawing.Point(240, 247)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(233, 22)
-        Me.TextBox4.TabIndex = 17
+        Me.tbDescripcion.Location = New System.Drawing.Point(240, 247)
+        Me.tbDescripcion.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tbDescripcion.Name = "tbDescripcion"
+        Me.tbDescripcion.Size = New System.Drawing.Size(233, 22)
+        Me.tbDescripcion.TabIndex = 17
         '
         'FormAgregarEtapa
         '
@@ -180,13 +161,12 @@ Partial Class FormAgregarEtapa
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(535, 421)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.tbDescripcion)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btAgregarEtapa)
+        Me.Controls.Add(Me.tbPresupuesto)
+        Me.Controls.Add(Me.tbNombreEtapa)
+        Me.Controls.Add(Me.tbNumeroEtapa)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
@@ -207,14 +187,13 @@ Partial Class FormAgregarEtapa
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents tbNumeroEtapa As TextBox
+    Friend WithEvents tbNombreEtapa As TextBox
+    Friend WithEvents tbPresupuesto As TextBox
+    Friend WithEvents btAgregarEtapa As Button
     Friend WithEvents SermiccsaDataSet As sermiccsaDataSet
     Friend WithEvents EtapaBindingSource As BindingSource
     Friend WithEvents EtapaTableAdapter As sermiccsaDataSetTableAdapters.etapaTableAdapter
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents tbDescripcion As TextBox
 End Class
