@@ -4,7 +4,7 @@
     Private _referencia As String
     Private _subtotal As Decimal
     Private _cantidadIR As Decimal
-    Private _iva As Integer
+    Private _iva As Decimal
 
     Public Sub New()
 
@@ -64,11 +64,11 @@
         End Set
     End Property
 
-    Public Property Iva As Integer
+    Public Property Iva As Decimal
         Get
             Return _iva
         End Get
-        Set(value As Integer)
+        Set(value As Decimal)
             _iva = value
         End Set
     End Property
