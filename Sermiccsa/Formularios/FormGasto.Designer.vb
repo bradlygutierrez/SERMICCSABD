@@ -29,7 +29,7 @@ Partial Class FormGasto
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.btAgregar = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btEditar = New System.Windows.Forms.Button()
         Me.cbRubro = New System.Windows.Forms.ComboBox()
         Me.GastoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
@@ -141,18 +141,18 @@ Partial Class FormGasto
         Me.btAgregar.Text = "Agregar"
         Me.btAgregar.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btEditar
         '
-        Me.Button3.BackColor = System.Drawing.Color.Black
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(798, 316)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(111, 38)
-        Me.Button3.TabIndex = 68
-        Me.Button3.Text = "Editar"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btEditar.BackColor = System.Drawing.Color.Black
+        Me.btEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btEditar.Location = New System.Drawing.Point(798, 316)
+        Me.btEditar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btEditar.Name = "btEditar"
+        Me.btEditar.Size = New System.Drawing.Size(111, 38)
+        Me.btEditar.TabIndex = 68
+        Me.btEditar.Text = "Editar"
+        Me.btEditar.UseVisualStyleBackColor = False
         '
         'cbRubro
         '
@@ -469,7 +469,7 @@ Partial Class FormGasto
         Me.Controls.Add(Me.lblFecha)
         Me.Controls.Add(Me.lblEtapa)
         Me.Controls.Add(Me.lblDescripcion)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btEditar)
         Me.Controls.Add(Me.btAgregar)
         Me.Controls.Add(Me.tbDescripcion)
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -507,7 +507,7 @@ Partial Class FormGasto
     Friend WithEvents lblReferencia As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents btAgregar As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btEditar As Button
     Friend WithEvents Label12 As Label
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button

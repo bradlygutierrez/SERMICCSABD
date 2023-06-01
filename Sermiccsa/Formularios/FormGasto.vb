@@ -131,4 +131,43 @@
         MsgBox("Gasto guardada correctamente", MsgBoxStyle.Information, "Nuevo gasto")
 
     End Sub
+
+    Private Sub btEditar_Click(sender As Object, e As EventArgs) Handles btEditar.Click
+        Dim factura As New Factura()
+        Dim dfactura As New DFactura
+        Dim selectedDate As DateTime = MonthCalendar1.SelectionRange.Start
+
+        ' Edita la factura
+        factura.IdFactura = 1
+        factura.FechaPago = selectedDate.ToString("dd/MM/yyyy")
+        factura.Referencia = tbReferencia.Text
+        factura.Subtotal = tbSubtotal.Text
+        If Decimal.Parse(tbSubtotal.Text) > 1000 Then
+            factura.CantidadIR = Decimal.Parse(tbSubtotal.Text) * 0.02
+        Else
+            factura.CantidadIR = 0
+        End If
+        factura.Iva = Decimal.Parse(tbSubtotal.Text) * 0.15
+
+        dfactura.editarFactura(factura)
+
+        ' Encuentra el gasto a editar
+        Dim gasto As New Gasto()
+        Dim dgasto As New DGasto
+
+        gasto.IdGasto = 1
+        gasto.Nombre = tbNombreGasto.Text
+        gasto.Descripcion = tbDescripcion.Text
+        gasto.IdEtapa = cbEtapa.SelectedValue
+        gasto.IdRubro = cbRubro.SelectedValue
+        gasto.IdBeneficiario = cbBeneficiario.SelectedValue
+        gasto.IdFactura = 1
+
+        If Not dgasto.editarGasto(gasto) Then
+            MsgBox("Error al editar el gasto", MsgBoxStyle.Critical, "Editar gasto")
+            Exit Sub
+        End If
+        MsgBox("Gasto editado correctamente", MsgBoxStyle.Information, "Editar gasto")
+
+    End Sub
 End Class
