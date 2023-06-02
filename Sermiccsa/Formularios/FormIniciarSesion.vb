@@ -70,4 +70,9 @@
         Me.Hide()
         FormPrincipal.Show()
     End Sub
+
+    Function DevolverNombreDeUsuario() As String
+        Dim nombre As String = tbUsuario.Text
+        Return nombre
+    End Function
 End Class

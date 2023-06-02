@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Runtime.InteropServices.WindowsRuntime
 Public Class DFactura
-    Dim strConexion = My.Settings.sermiccsaConnectionString.ToString()
+    Dim strConexion = My.Settings.sermiccsaConnectionString1.ToString()
 
     Public Function insertarFactura(ByVal factura As Factura) As Boolean
         Dim resultado = False

@@ -12,7 +12,8 @@ Public Class FormAjustes
     Private Sub btCambiarContrasena_Click(sender As Object, e As EventArgs) Handles btCambiarContrasena.Click
 
         Dim claveOp As String = ""
-        usuario.IdUsuario = 3 'RECUPERA EL ID BRADLY
+        usuario.IdUsuario = dUsuario.devolverID(FormIniciarSesion.DevolverNombreDeUsuario)
+        'RECUPERA EL ID BRADLY
 
         ' Valida campos vacios
         If tbNuevaContrasena.Text = "" Or tbContrasenaActual.Text = "" Or tbConfirmarContrasena.Text = "" Then
