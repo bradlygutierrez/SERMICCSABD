@@ -9,6 +9,9 @@
 *.sln.docstates
 *.vs/
 *.exe
+*.vb
+*.vbproj
+*.pdb
 
 # Ignorar archivos de caché de Visual Studio
 *.bak
