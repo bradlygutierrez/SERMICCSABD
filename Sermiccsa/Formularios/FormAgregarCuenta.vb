@@ -6,7 +6,7 @@ Public Class FormAgregarCuenta
 
     Dim usuario As New Usuario
     Dim dPregunta As New DPregunta
-
+    Dim dUsuario As New DUsuario
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
         Dim p As New Drawing2D.GraphicsPath()
         Dim borderRadius As Integer = 45
@@ -66,6 +66,23 @@ Public Class FormAgregarCuenta
     End Sub
 
     Private Sub btRegistrarUsuario_Click(sender As Object, e As EventArgs) Handles btRegistrarUsuario.Click
+
+        ' Valida campos vacios
+        If tbContrasena.Text = "" Or tbCorreo.Text = "" Or tbRespuesta.Text = "" Or tbUsuario.Text = "" Or tbVerificarContrasena.Text = "" Then
+            MsgBox("Ingrese todos los datos", MsgBoxStyle.Critical, "Agregar Cuenta")
+            Exit Sub
+        End If
+
+        ' Valida si el usuario ya existe
+        Dim dUsuario2 As New DUsuario()
+        Dim usuarios() As String = dUsuario2.recuperarUsuarios()
+
+        For Each usuarioT As String In usuarios
+            If tbUsuario.Text = usuarioT Then
+                MsgBox("El usuario ya esta registrado", MsgBoxStyle.Critical, "Editar Contrasena")
+                Exit Sub
+            End If
+        Next
 
         Dim usuario As New Usuario()
         usuario.Nombre = tbUsuario.Text

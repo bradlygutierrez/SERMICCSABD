@@ -300,6 +300,7 @@ Partial Class FormNuevoProyecto
         Me.MaximumSize = New System.Drawing.Size(1359, 728)
         Me.MinimumSize = New System.Drawing.Size(1359, 728)
         Me.Name = "FormNuevoProyecto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormNuevoProyecto"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

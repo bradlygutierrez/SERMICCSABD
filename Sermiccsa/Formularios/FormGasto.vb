@@ -13,6 +13,8 @@
         Me.FacturaTableAdapter.Fill(Me.SermiccsaDataSet.factura)
 
         ' Cargando datos
+        GastoBindingSource.Position = 0
+        FacturaBindingSource1.Position = 0
         MostrarPosicion()
         llenarComboEtapas()
         llenarComboRubro()
@@ -23,17 +25,26 @@
         Dim iTotal As Integer = GastoBindingSource.Count
         Dim iTotalFactura As Integer = FacturaBindingSource1.Count
         Dim iPosFactura As Integer
-        Dim iPos As Integer
+        Dim iPos As Integer = 1
+
         If iTotal = 0 And iTotalFactura = 0 Then
             Label12.Text = "No. de registros"
+
         Else
-            iPos = GastoBindingSource.Position + 1
-            iPosFactura = FacturaBindingSource1.Position + 1
+            iPos = iPos + GastoBindingSource.Position
+            iPosFactura = FacturaBindingSource1.Position
             Label12.Text = iPos.ToString & " de " & iTotal.ToString()
-            cbBeneficiario.SelectedValue = iPos
-            cbEtapa.SelectedValue = iPos
-            cbRubro.SelectedValue = iPos
+            cbBeneficiario.SelectedValue = GastoBindingSource.Position
+            cbEtapa.SelectedValue = GastoBindingSource.Position
+            cbRubro.SelectedValue = GastoBindingSource.Position
         End If
+
+        If FacturaBindingSource1.Position = 0 And FacturaBindingSource1.Position = 0 Then
+            cbBeneficiario.SelectedValue = GastoBindingSource.Position + 1
+            cbEtapa.SelectedValue = GastoBindingSource.Position + 1
+            cbRubro.SelectedValue = GastoBindingSource.Position + 1
+        End If
+
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
@@ -48,14 +59,14 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        GastoBindingSource.Position = -1
-        FacturaBindingSource1.Position = -1
+        GastoBindingSource.Position = GastoBindingSource.Position - 1
+        FacturaBindingSource1.Position = GastoBindingSource.Position - 1
         MostrarPosicion()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        GastoBindingSource.Position = +1
-        FacturaBindingSource1.Position = +1
+        GastoBindingSource.Position = GastoBindingSource.Position + 1
+        FacturaBindingSource1.Position = FacturaBindingSource1.Position + 1
         MostrarPosicion()
     End Sub
 
@@ -137,8 +148,11 @@
         Dim dfactura As New DFactura
         Dim selectedDate As DateTime = MonthCalendar1.SelectionRange.Start
 
+        ' Recupera el idFactura
+        Dim idFactura = dfactura.obtenerIdFactura(tbReferencia.Text)
+
         ' Edita la factura
-        factura.IdFactura = 1
+        factura.IdFactura = idFactura
         factura.FechaPago = selectedDate.ToString("dd/MM/yyyy")
         factura.Referencia = tbReferencia.Text
         factura.Subtotal = tbSubtotal.Text
@@ -151,17 +165,20 @@
 
         dfactura.editarFactura(factura)
 
+        ' Recupera el idGasto
+        Dim dgasto As New DGasto
+        Dim idGasto = dgasto.obtenerIdGasto(tbNombreGasto.Text)
+
         ' Encuentra el gasto a editar
         Dim gasto As New Gasto()
-        Dim dgasto As New DGasto
 
-        gasto.IdGasto = 1
+        gasto.IdGasto = idGasto
         gasto.Nombre = tbNombreGasto.Text
         gasto.Descripcion = tbDescripcion.Text
         gasto.IdEtapa = cbEtapa.SelectedValue
         gasto.IdRubro = cbRubro.SelectedValue
         gasto.IdBeneficiario = cbBeneficiario.SelectedValue
-        gasto.IdFactura = 1
+        gasto.IdFactura = idFactura
 
         If Not dgasto.editarGasto(gasto) Then
             MsgBox("Error al editar el gasto", MsgBoxStyle.Critical, "Editar gasto")
@@ -169,5 +186,28 @@
         End If
         MsgBox("Gasto editado correctamente", MsgBoxStyle.Information, "Editar gasto")
 
+    End Sub
+
+    Private Sub btEliminar_Click(sender As Object, e As EventArgs) Handles btEliminar.Click
+        Dim factura As New Factura()
+        Dim dfactura As New DFactura
+        Dim selectedDate As DateTime = MonthCalendar1.SelectionRange.Start
+
+        ' Recupera el idGasto
+        Dim dgasto As New DGasto
+        Dim idGasto = dgasto.obtenerIdGasto(tbNombreGasto.Text)
+
+        ' Recupera el idFactura
+        Dim idFactura = dfactura.obtenerIdFactura(tbReferencia.Text)
+
+        ' Se elimina el gasto
+        dgasto.eliminarGasto(idGasto)
+
+        ' Elimina la factura
+        If Not dfactura.eliminarFactura(idFactura) Then
+            MsgBox("Error al eliminar el gasto", MsgBoxStyle.Critical, "Eliminar gasto")
+            Exit Sub
+        End If
+        MsgBox("Gasto eliminado correctamente", MsgBoxStyle.Information, "Eliminar gasto")
     End Sub
 End Class

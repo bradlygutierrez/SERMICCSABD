@@ -237,6 +237,7 @@ Partial Class FormIniciarSesion
         Me.Controls.Add(Me.Panel1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FormIniciarSesion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormIniciarSesion"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

@@ -27,7 +27,6 @@ Partial Class FormGasto
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.btAgregar = New System.Windows.Forms.Button()
         Me.btEditar = New System.Windows.Forms.Button()
         Me.cbRubro = New System.Windows.Forms.ComboBox()
@@ -64,6 +63,9 @@ Partial Class FormGasto
         Me.FacturaBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.EtapaTableAdapter = New Sermiccsa.sermiccsaDataSetTableAdapters.etapaTableAdapter()
         Me.tbNombreGasto = New System.Windows.Forms.TextBox()
+        Me.btEliminar = New System.Windows.Forms.Button()
+        Me.FacturaBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GastoBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RubroBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +76,8 @@ Partial Class FormGasto
         CType(Me.EtapaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BeneficiarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FacturaBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FacturaBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GastoBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label12
@@ -115,25 +119,12 @@ Partial Class FormGasto
         Me.Button7.Text = "Anterior"
         Me.Button7.UseVisualStyleBackColor = False
         '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Black
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(1035, 316)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(111, 38)
-        Me.Button5.TabIndex = 70
-        Me.Button5.Text = "Eliminar"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
         'btAgregar
         '
         Me.btAgregar.BackColor = System.Drawing.Color.Black
         Me.btAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btAgregar.Location = New System.Drawing.Point(917, 316)
+        Me.btAgregar.Location = New System.Drawing.Point(919, 327)
         Me.btAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btAgregar.Name = "btAgregar"
         Me.btAgregar.Size = New System.Drawing.Size(111, 38)
@@ -146,7 +137,7 @@ Partial Class FormGasto
         Me.btEditar.BackColor = System.Drawing.Color.Black
         Me.btEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btEditar.Location = New System.Drawing.Point(798, 316)
+        Me.btEditar.Location = New System.Drawing.Point(800, 327)
         Me.btEditar.Margin = New System.Windows.Forms.Padding(4)
         Me.btEditar.Name = "btEditar"
         Me.btEditar.Size = New System.Drawing.Size(111, 38)
@@ -265,7 +256,7 @@ Partial Class FormGasto
         '
         'tbReferencia
         '
-        Me.tbReferencia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GastoBindingSource, "id_factura", True))
+        Me.tbReferencia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FacturaBindingSource1, "referencia", True))
         Me.tbReferencia.Location = New System.Drawing.Point(296, 265)
         Me.tbReferencia.Margin = New System.Windows.Forms.Padding(4)
         Me.tbReferencia.Multiline = True
@@ -287,8 +278,6 @@ Partial Class FormGasto
         '
         'cbEtapa
         '
-        Me.cbEtapa.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.GastoBindingSource2, "id_etapa", True))
-        Me.cbEtapa.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EtapaBindingSource, "nombre", True))
         Me.cbEtapa.DisplayMember = "id_proyecto"
         Me.cbEtapa.FormattingEnabled = True
         Me.cbEtapa.Location = New System.Drawing.Point(296, 209)
@@ -441,12 +430,36 @@ Partial Class FormGasto
         Me.tbNombreGasto.Size = New System.Drawing.Size(330, 22)
         Me.tbNombreGasto.TabIndex = 79
         '
+        'btEliminar
+        '
+        Me.btEliminar.BackColor = System.Drawing.Color.Black
+        Me.btEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btEliminar.Location = New System.Drawing.Point(1038, 327)
+        Me.btEliminar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btEliminar.Name = "btEliminar"
+        Me.btEliminar.Size = New System.Drawing.Size(111, 38)
+        Me.btEliminar.TabIndex = 80
+        Me.btEliminar.Text = "Eliminar"
+        Me.btEliminar.UseVisualStyleBackColor = False
+        '
+        'FacturaBindingSource3
+        '
+        Me.FacturaBindingSource3.DataMember = "factura"
+        Me.FacturaBindingSource3.DataSource = Me.SermiccsaDataSet
+        '
+        'GastoBindingSource3
+        '
+        Me.GastoBindingSource3.DataMember = "gasto"
+        Me.GastoBindingSource3.DataSource = Me.SermiccsaDataSet
+        '
         'FormGasto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1341, 681)
+        Me.Controls.Add(Me.btEliminar)
         Me.Controls.Add(Me.tbNombreGasto)
         Me.Controls.Add(Me.cbBeneficiario)
         Me.Controls.Add(Me.Label6)
@@ -464,7 +477,6 @@ Partial Class FormGasto
         Me.Controls.Add(Me.lblSubtotal)
         Me.Controls.Add(Me.lblNombreGasto)
         Me.Controls.Add(Me.tbReferencia)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.lblBeneficiario)
         Me.Controls.Add(Me.lblFecha)
         Me.Controls.Add(Me.lblEtapa)
@@ -476,6 +488,7 @@ Partial Class FormGasto
         Me.MaximumSize = New System.Drawing.Size(1359, 728)
         Me.MinimumSize = New System.Drawing.Size(1359, 728)
         Me.Name = "FormGasto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormGasto"
         CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -487,6 +500,8 @@ Partial Class FormGasto
         CType(Me.EtapaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BeneficiarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FacturaBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FacturaBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GastoBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -505,7 +520,6 @@ Partial Class FormGasto
     Friend WithEvents lblDescripcion As Label
     Friend WithEvents tbReferencia As TextBox
     Friend WithEvents lblReferencia As Label
-    Friend WithEvents Button5 As Button
     Friend WithEvents btAgregar As Button
     Friend WithEvents btEditar As Button
     Friend WithEvents Label12 As Label
@@ -531,4 +545,7 @@ Partial Class FormGasto
     Friend WithEvents EtapaTableAdapter As sermiccsaDataSetTableAdapters.etapaTableAdapter
     Friend WithEvents tbNombreGasto As TextBox
     Friend WithEvents GastoBindingSource2 As BindingSource
+    Friend WithEvents btEliminar As Button
+    Friend WithEvents FacturaBindingSource3 As BindingSource
+    Friend WithEvents GastoBindingSource3 As BindingSource
 End Class

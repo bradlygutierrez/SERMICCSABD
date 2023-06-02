@@ -42,6 +42,14 @@
 
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
 
+        ' Valida campos vacios
+        If tbIdBeneficiario.Text = "" Or tbIdentificacion.Text = "" Or tbNombre.Text = "" Then
+            MsgBox("Ingrese todos los datos", MsgBoxStyle.Critical, "Form Beneficiario")
+            Exit Sub
+        End If
+
+
+
         beneficiario.Id_beneficiario = tbIdBeneficiario.Text
         beneficiario.Nombre = tbNombre.Text
         beneficiario.Identificacion = tbIdentificacion.Text
@@ -52,4 +60,5 @@
         End If
         MsgBox("Beneficiario actualizado correctamente", MsgBoxStyle.Information, "Editar Beneficiario")
     End Sub
+
 End Class

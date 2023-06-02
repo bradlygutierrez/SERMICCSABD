@@ -49,7 +49,7 @@ Public Class DBeneficiario
         Dim ds As New DataSet
         Try
             Dim conn As New SqlConnection(strConn)
-            Dim tsql As String = "SELECT id_beneficiario, nombre FROM dbo.beneficiario"
+            Dim tsql As String = "SELECT *, nombre FROM dbo.beneficiario"
             Dim da As New SqlDataAdapter(tsql, conn)
 
             da.Fill(ds)

@@ -176,6 +176,7 @@ Partial Class FormAnadirRubro
         Me.Controls.Add(Me.lbl_idRubro)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FormAnadirRubro"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAniadirRubro"
         CType(Me.RubroBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

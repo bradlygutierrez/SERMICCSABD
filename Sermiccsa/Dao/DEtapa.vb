@@ -42,4 +42,27 @@ Public Class DEtapa
         Return ds
     End Function
 
+    Public Function recuperarEtapas() As String()
+        Dim etapas() As String = Nothing
+        Try
+            Dim conn As New SqlConnection(strConn)
+            Dim tsql As String = "SELECT nombre FROM etapa"
+            Dim da As New SqlDataAdapter(tsql, conn)
+
+            Dim dt As New DataTable()
+            da.Fill(dt)
+
+            If dt.Rows.Count > 0 Then
+                etapas = New String(dt.Rows.Count - 1) {}
+                For i As Integer = 0 To dt.Rows.Count - 1
+                    etapas(i) = dt.Rows(i)("nombre").ToString()
+                Next
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+            MsgBox("Ocurrió un error al listar los etapas", MsgBoxStyle.Information, "Listar etapas")
+        End Try
+        Return etapas
+    End Function
+
 End Class

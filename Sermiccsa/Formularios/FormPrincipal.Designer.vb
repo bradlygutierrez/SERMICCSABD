@@ -23,15 +23,22 @@ Partial Class FormPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.id_proyect = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IdusuarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechainicioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BeneficiarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PresupuestoinicialDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProyectoBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.SermiccsaDataSet = New Sermiccsa.sermiccsaDataSet()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -46,13 +53,6 @@ Partial Class FormPrincipal
         Me.BeneficiarioTableAdapter1 = New Sermiccsa.sermiccsaDataSetTableAdapters.beneficiarioTableAdapter()
         Me.TableAdapterManager = New Sermiccsa.sermiccsaDataSetTableAdapters.TableAdapterManager()
         Me.ProyectoBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.id_proyect = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdusuarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechainicioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BeneficiarioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PresupuestoinicialDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProyectoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +88,84 @@ Partial Class FormPrincipal
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(1052, 416)
         Me.DataGridView1.TabIndex = 0
+        '
+        'id_proyect
+        '
+        Me.id_proyect.DataPropertyName = "id_proyecto"
+        Me.id_proyect.HeaderText = "id_proyecto"
+        Me.id_proyect.MinimumWidth = 6
+        Me.id_proyect.Name = "id_proyect"
+        Me.id_proyect.ReadOnly = True
+        Me.id_proyect.Width = 125
+        '
+        'IdusuarioDataGridViewTextBoxColumn
+        '
+        Me.IdusuarioDataGridViewTextBoxColumn.DataPropertyName = "id_usuario"
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        Me.IdusuarioDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
+        Me.IdusuarioDataGridViewTextBoxColumn.HeaderText = "id_usuario"
+        Me.IdusuarioDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.IdusuarioDataGridViewTextBoxColumn.Name = "IdusuarioDataGridViewTextBoxColumn"
+        Me.IdusuarioDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdusuarioDataGridViewTextBoxColumn.Width = 125
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        Me.NombreDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NombreDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.NombreDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.NombreDataGridViewTextBoxColumn.Width = 125
+        '
+        'DescripcionDataGridViewTextBoxColumn
+        '
+        Me.DescripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion"
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        Me.DescripcionDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DescripcionDataGridViewTextBoxColumn.HeaderText = "descripcion"
+        Me.DescripcionDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.DescripcionDataGridViewTextBoxColumn.Name = "DescripcionDataGridViewTextBoxColumn"
+        Me.DescripcionDataGridViewTextBoxColumn.ReadOnly = True
+        Me.DescripcionDataGridViewTextBoxColumn.Width = 125
+        '
+        'FechainicioDataGridViewTextBoxColumn
+        '
+        Me.FechainicioDataGridViewTextBoxColumn.DataPropertyName = "fecha_inicio"
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        Me.FechainicioDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
+        Me.FechainicioDataGridViewTextBoxColumn.HeaderText = "fecha_inicio"
+        Me.FechainicioDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.FechainicioDataGridViewTextBoxColumn.Name = "FechainicioDataGridViewTextBoxColumn"
+        Me.FechainicioDataGridViewTextBoxColumn.ReadOnly = True
+        Me.FechainicioDataGridViewTextBoxColumn.Width = 125
+        '
+        'BeneficiarioDataGridViewTextBoxColumn
+        '
+        Me.BeneficiarioDataGridViewTextBoxColumn.DataPropertyName = "beneficiario"
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        Me.BeneficiarioDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
+        Me.BeneficiarioDataGridViewTextBoxColumn.HeaderText = "beneficiario"
+        Me.BeneficiarioDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.BeneficiarioDataGridViewTextBoxColumn.Name = "BeneficiarioDataGridViewTextBoxColumn"
+        Me.BeneficiarioDataGridViewTextBoxColumn.ReadOnly = True
+        Me.BeneficiarioDataGridViewTextBoxColumn.Width = 125
+        '
+        'PresupuestoinicialDataGridViewTextBoxColumn
+        '
+        Me.PresupuestoinicialDataGridViewTextBoxColumn.DataPropertyName = "presupuesto_inicial"
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        Me.PresupuestoinicialDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
+        Me.PresupuestoinicialDataGridViewTextBoxColumn.HeaderText = "presupuesto_inicial"
+        Me.PresupuestoinicialDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.PresupuestoinicialDataGridViewTextBoxColumn.Name = "PresupuestoinicialDataGridViewTextBoxColumn"
+        Me.PresupuestoinicialDataGridViewTextBoxColumn.ReadOnly = True
+        Me.PresupuestoinicialDataGridViewTextBoxColumn.Width = 125
         '
         'ProyectoBindingSource1
         '
@@ -228,84 +306,6 @@ Partial Class FormPrincipal
         Me.ProyectoBindingSource2.DataMember = "proyecto"
         Me.ProyectoBindingSource2.DataSource = Me.SermiccsaDataSet
         '
-        'id_proyect
-        '
-        Me.id_proyect.DataPropertyName = "id_proyecto"
-        Me.id_proyect.HeaderText = "id_proyecto"
-        Me.id_proyect.MinimumWidth = 6
-        Me.id_proyect.Name = "id_proyect"
-        Me.id_proyect.ReadOnly = True
-        Me.id_proyect.Width = 125
-        '
-        'IdusuarioDataGridViewTextBoxColumn
-        '
-        Me.IdusuarioDataGridViewTextBoxColumn.DataPropertyName = "id_usuario"
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
-        Me.IdusuarioDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
-        Me.IdusuarioDataGridViewTextBoxColumn.HeaderText = "id_usuario"
-        Me.IdusuarioDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.IdusuarioDataGridViewTextBoxColumn.Name = "IdusuarioDataGridViewTextBoxColumn"
-        Me.IdusuarioDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdusuarioDataGridViewTextBoxColumn.Width = 125
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        Me.NombreDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
-        Me.NombreDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.NombreDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.NombreDataGridViewTextBoxColumn.Width = 125
-        '
-        'DescripcionDataGridViewTextBoxColumn
-        '
-        Me.DescripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion"
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        Me.DescripcionDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
-        Me.DescripcionDataGridViewTextBoxColumn.HeaderText = "descripcion"
-        Me.DescripcionDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.DescripcionDataGridViewTextBoxColumn.Name = "DescripcionDataGridViewTextBoxColumn"
-        Me.DescripcionDataGridViewTextBoxColumn.ReadOnly = True
-        Me.DescripcionDataGridViewTextBoxColumn.Width = 125
-        '
-        'FechainicioDataGridViewTextBoxColumn
-        '
-        Me.FechainicioDataGridViewTextBoxColumn.DataPropertyName = "fecha_inicio"
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        Me.FechainicioDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
-        Me.FechainicioDataGridViewTextBoxColumn.HeaderText = "fecha_inicio"
-        Me.FechainicioDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FechainicioDataGridViewTextBoxColumn.Name = "FechainicioDataGridViewTextBoxColumn"
-        Me.FechainicioDataGridViewTextBoxColumn.ReadOnly = True
-        Me.FechainicioDataGridViewTextBoxColumn.Width = 125
-        '
-        'BeneficiarioDataGridViewTextBoxColumn
-        '
-        Me.BeneficiarioDataGridViewTextBoxColumn.DataPropertyName = "beneficiario"
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
-        Me.BeneficiarioDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
-        Me.BeneficiarioDataGridViewTextBoxColumn.HeaderText = "beneficiario"
-        Me.BeneficiarioDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.BeneficiarioDataGridViewTextBoxColumn.Name = "BeneficiarioDataGridViewTextBoxColumn"
-        Me.BeneficiarioDataGridViewTextBoxColumn.ReadOnly = True
-        Me.BeneficiarioDataGridViewTextBoxColumn.Width = 125
-        '
-        'PresupuestoinicialDataGridViewTextBoxColumn
-        '
-        Me.PresupuestoinicialDataGridViewTextBoxColumn.DataPropertyName = "presupuesto_inicial"
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        Me.PresupuestoinicialDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
-        Me.PresupuestoinicialDataGridViewTextBoxColumn.HeaderText = "presupuesto_inicial"
-        Me.PresupuestoinicialDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PresupuestoinicialDataGridViewTextBoxColumn.Name = "PresupuestoinicialDataGridViewTextBoxColumn"
-        Me.PresupuestoinicialDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PresupuestoinicialDataGridViewTextBoxColumn.Width = 125
-        '
         'FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -325,6 +325,7 @@ Partial Class FormPrincipal
         Me.MaximumSize = New System.Drawing.Size(1359, 728)
         Me.MinimumSize = New System.Drawing.Size(1359, 728)
         Me.Name = "FormPrincipal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormPrincipal"
         Me.Panel1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

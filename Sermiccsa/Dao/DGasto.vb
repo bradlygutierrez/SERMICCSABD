@@ -33,7 +33,7 @@ Public Class DGasto
         Dim ds As New DataSet
         Try
             Dim conn As New SqlConnection(strConexion)
-            Dim tsql As String = "SELECT id_gasto, nombre FROM dbo.gasto"
+            Dim tsql As String = "SELECT * FROM dbo.gasto"
             Dim da As New SqlDataAdapter(tsql, conn)
 
             da.Fill(ds)
@@ -67,6 +67,45 @@ Public Class DGasto
             MsgBox("Ocurrio un error al actualizar el gasto", MsgBoxStyle.Critical, "Error")
         End Try
         Return b
+    End Function
+
+    Public Function obtenerIdGasto(ByVal nombre As String) As String
+        Try
+            Dim Gasto As New Gasto()
+            Dim ds As New DataTable
+            Dim conn As New SqlConnection(strConexion)
+            Dim tsql As String = "select * from gasto where nombre = @nombre"
+            Dim da As New SqlDataAdapter(tsql, conn)
+            Dim idGastoRecuperada As String = ""
+
+            da.SelectCommand.Parameters.AddWithValue("@nombre", nombre)
+            da.Fill(ds)
+            Gasto.IdGasto = ds.Rows(0).Item("id_gasto")
+            idGastoRecuperada = Gasto.IdGasto
+            Return idGastoRecuperada
+
+        Catch ex As Exception
+            MsgBox("Ocurrio un error al recuperar el Id_Gasto", MsgBoxStyle.Information, "Form Gasto")
+        End Try
+    End Function
+
+    Public Function eliminarGasto(ByVal id_gasto As String) As Boolean
+        Dim b = False
+        Try
+            Dim conn As New SqlConnection(strConexion)
+            Dim tsql As String = "DELETE FROM gasto WHERE id_gasto = @id_gasto;"
+            Dim cmd As New SqlCommand(tsql, conn)
+            cmd.Parameters.AddWithValue("@id_gasto", id_gasto)
+            conn.Open()
+            If cmd.ExecuteNonQuery() <> 0 Then
+                b = True
+            End If
+            conn.Close()
+        Catch ex As Exception
+            MsgBox("Ocurrio un error al eliminar el gasto", MsgBoxStyle.Critical, "Error")
+        End Try
+        Return b
+
     End Function
 
 End Class

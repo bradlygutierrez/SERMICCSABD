@@ -31,7 +31,7 @@ Public Class DFactura
         Dim ds As New DataSet
         Try
             Dim conn As New SqlConnection(strConexion)
-            Dim tsql As String = "SELECT id_factura, referencia FROM dbo.factura"
+            Dim tsql As String = "SELECT * FROM dbo.factura"
             Dim da As New SqlDataAdapter(tsql, conn)
 
             da.Fill(ds)
@@ -64,6 +64,45 @@ Public Class DFactura
             MsgBox("Ocurrio un error al actualizar la factura", MsgBoxStyle.Critical, "Error")
         End Try
         Return b
+    End Function
+
+    Public Function obtenerIdFactura(ByVal referencia As String) As String
+        Try
+            Dim factura As New Factura()
+            Dim ds As New DataTable
+            Dim conn As New SqlConnection(strConexion)
+            Dim tsql As String = "select * from factura where referencia = @referencia"
+            Dim da As New SqlDataAdapter(tsql, conn)
+            Dim idfacturaRecuperada As String = ""
+
+            da.SelectCommand.Parameters.AddWithValue("@referencia", referencia)
+            da.Fill(ds)
+            factura.IdFactura = ds.Rows(0).Item("id_factura")
+            idfacturaRecuperada = factura.IdFactura
+            Return idfacturaRecuperada
+
+        Catch ex As Exception
+            MsgBox("Ocurrio un error al recuperar la Id_Factura", MsgBoxStyle.Information, "Form Gasto")
+        End Try
+    End Function
+
+    Public Function eliminarFactura(ByVal id_factura) As Boolean
+        Dim b = False
+        Try
+            Dim conn As New SqlConnection(strConexion)
+            Dim tsql As String = "DELETE FROM factura WHERE id_factura = @id_factura;"
+            Dim cmd As New SqlCommand(tsql, conn)
+            cmd.Parameters.AddWithValue("@id_factura", id_factura)
+            conn.Open()
+            If cmd.ExecuteNonQuery() <> 0 Then
+                b = True
+            End If
+            conn.Close()
+        Catch ex As Exception
+            MsgBox("Ocurrio un error al eliminar la factura", MsgBoxStyle.Critical, "Error")
+        End Try
+        Return b
+
     End Function
 
 End Class

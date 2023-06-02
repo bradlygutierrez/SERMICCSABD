@@ -380,6 +380,7 @@ Partial Class FormAgregarCuenta
         Me.MaximumSize = New System.Drawing.Size(1359, 728)
         Me.MinimumSize = New System.Drawing.Size(1359, 728)
         Me.Name = "FormAgregarCuenta"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormAgregarCuenta"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

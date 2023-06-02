@@ -52,7 +52,7 @@ Partial Class FormCambiarContraseña
         '
         Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(23, 352)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(35, 32)
         Me.PictureBox4.TabIndex = 30
@@ -62,7 +62,7 @@ Partial Class FormCambiarContraseña
         '
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(23, 222)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(33, 31)
         Me.PictureBox3.TabIndex = 29
@@ -72,7 +72,7 @@ Partial Class FormCambiarContraseña
         '
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(23, 277)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(35, 32)
         Me.PictureBox2.TabIndex = 28
@@ -82,7 +82,7 @@ Partial Class FormCambiarContraseña
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(467, 197)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(156, 134)
         Me.PictureBox1.TabIndex = 27
@@ -98,7 +98,7 @@ Partial Class FormCambiarContraseña
         Me.btCambiarContrasena.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btCambiarContrasena.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btCambiarContrasena.Location = New System.Drawing.Point(433, 352)
-        Me.btCambiarContrasena.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btCambiarContrasena.Margin = New System.Windows.Forms.Padding(4)
         Me.btCambiarContrasena.Name = "btCambiarContrasena"
         Me.btCambiarContrasena.Size = New System.Drawing.Size(217, 42)
         Me.btCambiarContrasena.TabIndex = 26
@@ -109,7 +109,7 @@ Partial Class FormCambiarContraseña
         '
         Me.tbConfirmarContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbConfirmarContraseña.Location = New System.Drawing.Point(64, 359)
-        Me.tbConfirmarContraseña.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbConfirmarContraseña.Margin = New System.Windows.Forms.Padding(4)
         Me.tbConfirmarContraseña.Multiline = True
         Me.tbConfirmarContraseña.Name = "tbConfirmarContraseña"
         Me.tbConfirmarContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -120,7 +120,7 @@ Partial Class FormCambiarContraseña
         '
         Me.tbNuevaContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNuevaContraseña.Location = New System.Drawing.Point(64, 284)
-        Me.tbNuevaContraseña.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbNuevaContraseña.Margin = New System.Windows.Forms.Padding(4)
         Me.tbNuevaContraseña.Multiline = True
         Me.tbNuevaContraseña.Name = "tbNuevaContraseña"
         Me.tbNuevaContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -131,7 +131,7 @@ Partial Class FormCambiarContraseña
         '
         Me.tbRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbRespuesta.Location = New System.Drawing.Point(64, 228)
-        Me.tbRespuesta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbRespuesta.Margin = New System.Windows.Forms.Padding(4)
         Me.tbRespuesta.Multiline = True
         Me.tbRespuesta.Name = "tbRespuesta"
         Me.tbRespuesta.Size = New System.Drawing.Size(292, 30)
@@ -268,8 +268,9 @@ Partial Class FormCambiarContraseña
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormCambiarContraseña"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "recuperarContraseña"
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()

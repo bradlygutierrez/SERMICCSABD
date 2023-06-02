@@ -48,15 +48,15 @@ Partial Class FormBeneficiario
         'tbIdBeneficiario
         '
         Me.tbIdBeneficiario.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.tbIdBeneficiario.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.BeneficiarioBindingSource, "id_beneficiario", True))
         Me.tbIdBeneficiario.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BeneficiarioBindingSource, "id_beneficiario", True))
-        Me.tbIdBeneficiario.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbIdBeneficiario.Location = New System.Drawing.Point(243, 113)
+        Me.tbIdBeneficiario.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbIdBeneficiario.Location = New System.Drawing.Point(241, 99)
         Me.tbIdBeneficiario.Margin = New System.Windows.Forms.Padding(5)
         Me.tbIdBeneficiario.Name = "tbIdBeneficiario"
         Me.tbIdBeneficiario.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.tbIdBeneficiario.Size = New System.Drawing.Size(388, 22)
+        Me.tbIdBeneficiario.Size = New System.Drawing.Size(388, 28)
         Me.tbIdBeneficiario.TabIndex = 25
+        Me.tbIdBeneficiario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'BeneficiarioBindingSource
         '
@@ -85,7 +85,7 @@ Partial Class FormBeneficiario
         Me.lbl_idBeneficiario.AutoSize = True
         Me.lbl_idBeneficiario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_idBeneficiario.ForeColor = System.Drawing.SystemColors.MenuBar
-        Me.lbl_idBeneficiario.Location = New System.Drawing.Point(37, 113)
+        Me.lbl_idBeneficiario.Location = New System.Drawing.Point(65, 102)
         Me.lbl_idBeneficiario.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lbl_idBeneficiario.Name = "lbl_idBeneficiario"
         Me.lbl_idBeneficiario.Size = New System.Drawing.Size(145, 25)
@@ -97,7 +97,7 @@ Partial Class FormBeneficiario
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.White
-        Me.lblTitulo.Location = New System.Drawing.Point(119, 30)
+        Me.lblTitulo.Location = New System.Drawing.Point(185, 32)
         Me.lblTitulo.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblTitulo.Name = "lblTitulo"
         Me.lblTitulo.Size = New System.Drawing.Size(426, 32)
@@ -106,13 +106,12 @@ Partial Class FormBeneficiario
         '
         'tbNombre
         '
-        Me.tbNombre.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.BeneficiarioBindingSource, "nombre", True))
         Me.tbNombre.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BeneficiarioBindingSource, "nombre", True))
-        Me.tbNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNombre.Location = New System.Drawing.Point(243, 175)
+        Me.tbNombre.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbNombre.Location = New System.Drawing.Point(241, 161)
         Me.tbNombre.Margin = New System.Windows.Forms.Padding(5)
         Me.tbNombre.Name = "tbNombre"
-        Me.tbNombre.Size = New System.Drawing.Size(388, 22)
+        Me.tbNombre.Size = New System.Drawing.Size(388, 28)
         Me.tbNombre.TabIndex = 27
         '
         'lbl_nombre
@@ -120,7 +119,7 @@ Partial Class FormBeneficiario
         Me.lbl_nombre.AutoSize = True
         Me.lbl_nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_nombre.ForeColor = System.Drawing.SystemColors.MenuBar
-        Me.lbl_nombre.Location = New System.Drawing.Point(37, 175)
+        Me.lbl_nombre.Location = New System.Drawing.Point(65, 164)
         Me.lbl_nombre.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lbl_nombre.Name = "lbl_nombre"
         Me.lbl_nombre.Size = New System.Drawing.Size(92, 25)
@@ -129,13 +128,12 @@ Partial Class FormBeneficiario
         '
         'tbIdentificacion
         '
-        Me.tbIdentificacion.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.BeneficiarioBindingSource, "identificacion", True))
         Me.tbIdentificacion.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BeneficiarioBindingSource, "identificacion", True))
-        Me.tbIdentificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbIdentificacion.Location = New System.Drawing.Point(243, 241)
+        Me.tbIdentificacion.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbIdentificacion.Location = New System.Drawing.Point(241, 227)
         Me.tbIdentificacion.Margin = New System.Windows.Forms.Padding(5)
         Me.tbIdentificacion.Name = "tbIdentificacion"
-        Me.tbIdentificacion.Size = New System.Drawing.Size(388, 22)
+        Me.tbIdentificacion.Size = New System.Drawing.Size(388, 28)
         Me.tbIdentificacion.TabIndex = 29
         '
         'lbl_identificacion
@@ -143,7 +141,7 @@ Partial Class FormBeneficiario
         Me.lbl_identificacion.AutoSize = True
         Me.lbl_identificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_identificacion.ForeColor = System.Drawing.SystemColors.MenuBar
-        Me.lbl_identificacion.Location = New System.Drawing.Point(37, 241)
+        Me.lbl_identificacion.Location = New System.Drawing.Point(65, 230)
         Me.lbl_identificacion.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lbl_identificacion.Name = "lbl_identificacion"
         Me.lbl_identificacion.Size = New System.Drawing.Size(136, 25)
@@ -157,19 +155,19 @@ Partial Class FormBeneficiario
         'labelContador
         '
         Me.labelContador.AutoSize = True
-        Me.labelContador.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelContador.Font = New System.Drawing.Font("Roboto", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelContador.ForeColor = System.Drawing.Color.White
-        Me.labelContador.Location = New System.Drawing.Point(303, 354)
+        Me.labelContador.Location = New System.Drawing.Point(306, 351)
         Me.labelContador.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.labelContador.Name = "labelContador"
-        Me.labelContador.Size = New System.Drawing.Size(57, 16)
+        Me.labelContador.Size = New System.Drawing.Size(101, 28)
         Me.labelContador.TabIndex = 71
         Me.labelContador.Text = "10 de 56"
         '
         'btnSiguiente
         '
         Me.btnSiguiente.BackColor = System.Drawing.Color.Black
-        Me.btnSiguiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguiente.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSiguiente.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnSiguiente.Location = New System.Drawing.Point(464, 343)
         Me.btnSiguiente.Margin = New System.Windows.Forms.Padding(5)
@@ -182,7 +180,7 @@ Partial Class FormBeneficiario
         'btnAnterior
         '
         Me.btnAnterior.BackColor = System.Drawing.Color.Black
-        Me.btnAnterior.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnterior.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnterior.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAnterior.Location = New System.Drawing.Point(137, 343)
         Me.btnAnterior.Margin = New System.Windows.Forms.Padding(5)
@@ -195,7 +193,7 @@ Partial Class FormBeneficiario
         'btnEditar
         '
         Me.btnEditar.BackColor = System.Drawing.Color.Black
-        Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditar.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnEditar.Location = New System.Drawing.Point(221, 288)
         Me.btnEditar.Margin = New System.Windows.Forms.Padding(5)
@@ -208,7 +206,7 @@ Partial Class FormBeneficiario
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.Color.Black
-        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnGuardar.Location = New System.Drawing.Point(383, 288)
         Me.btnGuardar.Margin = New System.Windows.Forms.Padding(5)
@@ -245,6 +243,7 @@ Partial Class FormBeneficiario
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FormBeneficiario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Formulario Beneficiario"
         CType(Me.BeneficiarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SermiccsaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
