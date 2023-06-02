@@ -84,7 +84,7 @@ Public Class FormPrincipal
         End If
     End Sub
 
-    Function devolverID(sender As Object, e As DataGridViewCellEventArgs) As Integer
+    Function devolverID() As Integer
         Dim idProyecto As Integer
         idProyecto = DataGridView1.SelectedCells(0).Value
         Return idProyecto
@@ -103,6 +103,20 @@ Public Class FormPrincipal
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
 
+    End Sub
+
+
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim dao As New DProyecto
+        DataGridView1.DataSource = dao.BuscarProyecto(TextBox1.Text.Trim).Tables(0)
+        DataGridView1.Refresh()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim dao As New DProyecto
+        DataGridView1.DataSource = dao.MostrarRegistros().Tables(0)
+        DataGridView1.Refresh()
     End Sub
 End Class
 

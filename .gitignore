@@ -3,14 +3,14 @@
 /bin/
 /obj/
 
-# Ignorar archivos de configuración de Visual Studio
+# Ignorar archivos de configuracion de Visual Studio
 *.suo
 *.user
 *.sln.docstates
 *.vs/
 *.exe
 
-# Ignorar archivos de caché de Visual Studio
+# Ignorar archivos de cache de Visual Studio
 *.bak
 *.cache
 *.csproj.user

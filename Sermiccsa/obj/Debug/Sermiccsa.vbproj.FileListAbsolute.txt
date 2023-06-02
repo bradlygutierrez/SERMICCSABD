@@ -204,3 +204,106 @@ D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agen
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
 C:\Users\Emanuel Leite\Documents\Computer Science\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.pdb
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.xml
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.exe
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.xml
+D:\Backup\Escritorio\3er semestre ing en sistemas\Diseño de bases de datos\Agenda 7\SERMICCSABD 29.5.2023\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.pdb
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe.config
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.exe
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.pdb
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Sermiccsa.xml
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\EnvDTE.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\stdole.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.AssemblyReference.cache
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.SuggestedBindingRedirects.cache
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarCuenta.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAgregarEtapa.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormBeneficiario.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormCambiarContraseña.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormGasto.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAjustes.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormAnadirRubro.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormEspecificacionesEtapas.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormIniciarSesion.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormNuevoProyecto.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormPrincipal.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormProyectoX.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.FormReportes.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.Resources.resources
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.GenerateResource.cache
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CoreCompileInputs.cache
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.vbproj.CopyComplete
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.exe
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.xml
+C:\Users\bradl\source\repos\SERMICCSABD\Sermiccsa\obj\Debug\Sermiccsa.pdb

@@ -2,7 +2,7 @@
 Imports System.Runtime.InteropServices.WindowsRuntime
 Public Class DGasto
 
-    Dim strConexion = My.Settings.sermiccsaConnectionString.ToString()
+    Dim strConexion = My.Settings.sermiccsaConnectionString1.ToString()
 
     Public Function insertarGasto(ByVal gasto As Gasto) As Boolean
         Dim resultado = False

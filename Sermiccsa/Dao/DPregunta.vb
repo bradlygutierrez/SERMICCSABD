@@ -2,7 +2,7 @@
 
 Public Class DPregunta
 
-    Dim strConexion = My.Settings.sermiccsaConnectionString.ToString()
+    Dim strConexion = My.Settings.sermiccsaConnectionString1.ToString()
 
     Public Function listarPreguntas() As DataSet
         Dim ds As New DataSet

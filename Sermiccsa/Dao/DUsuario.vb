@@ -3,7 +3,7 @@ Imports System.Runtime.InteropServices.WindowsRuntime
 
 Public Class DUsuario
 
-    Dim strConexion = My.Settings.sermiccsaConnectionString.ToString()
+    Dim strConexion = My.Settings.sermiccsaConnectionString1.ToString()
 
     Public Function insertarUsuario(ByVal usuario As Usuario) As Boolean
         Dim resultado = False
@@ -170,4 +170,24 @@ Public Class DUsuario
         Return existeUsuario
     End Function
 
+    Function devolverID(Nombre As String)
+        Dim strConn As String = My.Settings.sermiccsaConnectionString1.ToString()
+        Dim connectionString As String = "Data Source=nombreServidor;Initial Catalog=nombreBaseDeDatos;Integrated Security=True"
+        Dim query As String = "SELECT id_usuario FROM usuario WHERE nombre = @Nombre"
+        Dim conn As New SqlConnection(strConn)
+        Using command As New SqlCommand(query, conn)
+            command.Parameters.AddWithValue("@Nombre", Nombre)
+
+            conn.Open()
+            Dim id As Object = command.ExecuteScalar()
+            conn.Close()
+
+            If id IsNot Nothing AndAlso Not DBNull.Value.Equals(id) Then
+                Return CInt(id)
+            Else
+                Return -1 ' Si no se encuentra el ID, puedes retornar un valor específico indicando que no se encontró.
+            End If
+        End Using
+
+    End Function
 End Class
