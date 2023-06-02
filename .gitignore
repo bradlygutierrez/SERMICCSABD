@@ -2,6 +2,8 @@
 # Carpeta bin
 /bin/
 /obj/
+.vs/
+*.suo
 
 # Ignorar archivos de configuracion de Visual Studio
 *.suo
@@ -9,6 +11,18 @@
 *.sln.docstates
 *.vs/
 *.exe
+*.vb
+*.vbproj
+*.pdb
+
+# Ignorar archivos de diseño de formularios
+Sermiccsa/Formularios/FormPrincipal.Designer.vb
+Sermiccsa/Formularios/FormReportes.Designer.vb
+
+# Ignorar archivos y directorios del proyecto
+Sermiccsa/Sermiccsa.vbproj
+Sermiccsa/bin/
+Sermiccsa/obj/
 
 # Ignorar archivos de cache de Visual Studio
 *.bak
